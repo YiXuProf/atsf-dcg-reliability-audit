@@ -1,0 +1,15 @@
+# Python 3.10. Versions pinned to the environment used with this package.
+# pip install -r requirements.txt
+#
+# Default torch wheel from PyPI is CPU. For GPU training, install the same
+# torch==2.13.0 CUDA build from https://pytorch.org after (or instead of)
+# the torch line below; do not change the version number.
+
+torch==2.13.0
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.8
+rdata==0.11.2
+xarray==2025.6.1
