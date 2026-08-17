@@ -1,0 +1,526 @@
+nohup: 忽略输入
+
+===== Cell A START 20:53:04 =====
+/usr/local/bin/python3 -m atsf_dcg.run_experiments --cell replication --dataset nppad --arch tsnet --data-root /mnt/workspace/NuclearPowerPlantAccidentData-main/Operation_csv_data --configs full w/o_spectral w/o_temporal w/o_fusion w/o_gating tsnet_vanilla --seeds 42 43 44 45 46 47 48 49 50 51 --degradation --log-epoch-indicators
+[setup] data=/mnt/workspace/NuclearPowerPlantAccidentData-main/Operation_csv_data seeds=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51] cell=replication dataset=nppad arch=tsnet configs=['full', 'w/o_spectral', 'w/o_temporal', 'w/o_fusion', 'w/o_gating', 'tsnet_vanilla'] epochs=100 device=cuda
+[1/60] config=full seed=42 -> results_replication_nppad_tsnet/diagnostics/full_seed42.jsonl
+    acc=0.7814 macroF1=0.6700 epochs_run=13 H_alpha=0.49148627714238163 rho_last=2.6973455894406997 (16.1s)
+[2/60] config=w/o_spectral seed=42 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed42.jsonl
+    acc=0.7837 macroF1=0.6696 epochs_run=31 H_alpha=None rho_last=None (22.3s)
+[3/60] config=w/o_temporal seed=42 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed42.jsonl
+    acc=0.6410 macroF1=0.5537 epochs_run=23 H_alpha=None rho_last=None (8.4s)
+[4/60] config=w/o_fusion seed=42 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed42.jsonl
+    acc=0.7779 macroF1=0.6629 epochs_run=13 H_alpha=None rho_last=1.5178780946937318 (12.4s)
+[5/60] config=w/o_gating seed=42 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed42.jsonl
+    acc=0.7618 macroF1=0.6298 epochs_run=14 H_alpha=0.48397387883850573 rho_last=1.4607834396811388 (13.8s)
+[6/60] config=tsnet_vanilla seed=42 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed42.jsonl
+    acc=0.7756 macroF1=0.7002 epochs_run=18 H_alpha=None rho_last=None (13.3s)
+[7/60] config=full seed=43 -> results_replication_nppad_tsnet/diagnostics/full_seed43.jsonl
+    acc=0.7687 macroF1=0.6547 epochs_run=15 H_alpha=0.4142157201097398 rho_last=1.8080951592403962 (15.0s)
+[8/60] config=w/o_spectral seed=43 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed43.jsonl
+    acc=0.7894 macroF1=0.7083 epochs_run=25 H_alpha=None rho_last=None (18.5s)
+[9/60] config=w/o_temporal seed=43 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed43.jsonl
+    acc=0.6479 macroF1=0.5198 epochs_run=30 H_alpha=None rho_last=None (10.6s)
+[10/60] config=w/o_fusion seed=43 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed43.jsonl
+    acc=0.7595 macroF1=0.6800 epochs_run=22 H_alpha=None rho_last=1.6874699725994247 (19.9s)
+[11/60] config=w/o_gating seed=43 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed43.jsonl
+    acc=0.7699 macroF1=0.6999 epochs_run=16 H_alpha=0.3612368880948107 rho_last=3.617275464654386 (15.6s)
+[12/60] config=tsnet_vanilla seed=43 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed43.jsonl
+    acc=0.7756 macroF1=0.6040 epochs_run=13 H_alpha=None rho_last=None (10.1s)
+[13/60] config=full seed=44 -> results_replication_nppad_tsnet/diagnostics/full_seed44.jsonl
+    acc=0.7825 macroF1=0.6886 epochs_run=22 H_alpha=0.6390790137284943 rho_last=2.6354372801629915 (21.0s)
+[14/60] config=w/o_spectral seed=44 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed44.jsonl
+    acc=0.7883 macroF1=0.6104 epochs_run=13 H_alpha=None rho_last=None (10.3s)
+[15/60] config=w/o_temporal seed=44 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed44.jsonl
+    acc=0.6628 macroF1=0.5102 epochs_run=33 H_alpha=None rho_last=None (11.4s)
+[16/60] config=w/o_fusion seed=44 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed44.jsonl
+    acc=0.7606 macroF1=0.6789 epochs_run=30 H_alpha=None rho_last=1.7399723483884413 (26.4s)
+[17/60] config=w/o_gating seed=44 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed44.jsonl
+    acc=0.7779 macroF1=0.6891 epochs_run=13 H_alpha=0.4789753463126044 rho_last=2.3605116308444933 (12.9s)
+[18/60] config=tsnet_vanilla seed=44 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed44.jsonl
+    acc=0.7917 macroF1=0.6783 epochs_run=21 H_alpha=None rho_last=None (15.2s)
+[19/60] config=full seed=45 -> results_replication_nppad_tsnet/diagnostics/full_seed45.jsonl
+    acc=0.7837 macroF1=0.6389 epochs_run=23 H_alpha=0.4068366009215878 rho_last=2.952387093100256 (21.7s)
+[20/60] config=w/o_spectral seed=45 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed45.jsonl
+    acc=0.7929 macroF1=0.6688 epochs_run=17 H_alpha=None rho_last=None (13.1s)
+[21/60] config=w/o_temporal seed=45 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed45.jsonl
+    acc=0.6352 macroF1=0.5101 epochs_run=51 H_alpha=None rho_last=None (16.7s)
+[22/60] config=w/o_fusion seed=45 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed45.jsonl
+    acc=0.7745 macroF1=0.5539 epochs_run=30 H_alpha=None rho_last=1.9210903412510028 (26.3s)
+[23/60] config=w/o_gating seed=45 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed45.jsonl
+    acc=0.7733 macroF1=0.6705 epochs_run=12 H_alpha=0.2244792878752673 rho_last=6.642510151614135 (12.2s)
+[24/60] config=tsnet_vanilla seed=45 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed45.jsonl
+    acc=0.7871 macroF1=0.6786 epochs_run=31 H_alpha=None rho_last=None (21.6s)
+[25/60] config=full seed=46 -> results_replication_nppad_tsnet/diagnostics/full_seed46.jsonl
+    acc=0.7825 macroF1=0.6250 epochs_run=25 H_alpha=0.5703723973563185 rho_last=1.190087347124832 (23.3s)
+[26/60] config=w/o_spectral seed=46 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed46.jsonl
+    acc=0.7779 macroF1=0.6884 epochs_run=29 H_alpha=None rho_last=None (21.2s)
+[27/60] config=w/o_temporal seed=46 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed46.jsonl
+    acc=0.6329 macroF1=0.5115 epochs_run=32 H_alpha=None rho_last=None (11.0s)
+[28/60] config=w/o_fusion seed=46 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed46.jsonl
+    acc=0.7894 macroF1=0.6799 epochs_run=24 H_alpha=None rho_last=2.5200707539609075 (21.4s)
+[29/60] config=w/o_gating seed=46 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed46.jsonl
+    acc=0.7710 macroF1=0.6848 epochs_run=50 H_alpha=0.4712895376970562 rho_last=2.228488277852862 (43.7s)
+[30/60] config=tsnet_vanilla seed=46 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed46.jsonl
+    acc=0.7871 macroF1=0.7006 epochs_run=26 H_alpha=None rho_last=None (18.4s)
+[31/60] config=full seed=47 -> results_replication_nppad_tsnet/diagnostics/full_seed47.jsonl
+    acc=0.7595 macroF1=0.6960 epochs_run=25 H_alpha=0.5388231691446734 rho_last=2.2561909011792207 (23.4s)
+[32/60] config=w/o_spectral seed=47 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed47.jsonl
+    acc=0.7814 macroF1=0.6780 epochs_run=16 H_alpha=None rho_last=None (12.4s)
+[33/60] config=w/o_temporal seed=47 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed47.jsonl
+    acc=0.6467 macroF1=0.5332 epochs_run=46 H_alpha=None rho_last=None (15.2s)
+[34/60] config=w/o_fusion seed=47 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed47.jsonl
+    acc=0.7675 macroF1=0.6096 epochs_run=17 H_alpha=None rho_last=2.0232014579503224 (15.6s)
+[35/60] config=w/o_gating seed=47 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed47.jsonl
+    acc=0.7618 macroF1=0.6383 epochs_run=15 H_alpha=0.6113006453260065 rho_last=1.8690288699173325 (14.4s)
+[36/60] config=tsnet_vanilla seed=47 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed47.jsonl
+    acc=0.7998 macroF1=0.6836 epochs_run=33 H_alpha=None rho_last=None (22.9s)
+[37/60] config=full seed=48 -> results_replication_nppad_tsnet/diagnostics/full_seed48.jsonl
+    acc=0.7652 macroF1=0.6156 epochs_run=14 H_alpha=0.5634804652066209 rho_last=1.9942071148479883 (14.0s)
+[38/60] config=w/o_spectral seed=48 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed48.jsonl
+    acc=0.7917 macroF1=0.6782 epochs_run=31 H_alpha=None rho_last=None (22.4s)
+[39/60] config=w/o_temporal seed=48 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed48.jsonl
+    acc=0.6421 macroF1=0.5278 epochs_run=45 H_alpha=None rho_last=None (14.8s)
+[40/60] config=w/o_fusion seed=48 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed48.jsonl
+    acc=0.7238 macroF1=0.6624 epochs_run=18 H_alpha=None rho_last=1.4373310664421024 (16.7s)
+[41/60] config=w/o_gating seed=48 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed48.jsonl
+    acc=0.7814 macroF1=0.7069 epochs_run=26 H_alpha=0.6476096563519802 rho_last=2.623486029754602 (23.8s)
+[42/60] config=tsnet_vanilla seed=48 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed48.jsonl
+    acc=0.7733 macroF1=0.6713 epochs_run=15 H_alpha=None rho_last=None (11.4s)
+[43/60] config=full seed=49 -> results_replication_nppad_tsnet/diagnostics/full_seed49.jsonl
+    acc=0.7768 macroF1=0.6771 epochs_run=26 H_alpha=0.5313876431589647 rho_last=1.884617903830093 (24.5s)
+[44/60] config=w/o_spectral seed=49 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed49.jsonl
+    acc=0.7917 macroF1=0.6811 epochs_run=17 H_alpha=None rho_last=None (13.1s)
+[45/60] config=w/o_temporal seed=49 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed49.jsonl
+    acc=0.6352 macroF1=0.5239 epochs_run=45 H_alpha=None rho_last=None (15.1s)
+[46/60] config=w/o_fusion seed=49 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed49.jsonl
+    acc=0.7906 macroF1=0.5722 epochs_run=17 H_alpha=None rho_last=1.871903813204447 (15.9s)
+[47/60] config=w/o_gating seed=49 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed49.jsonl
+    acc=0.7837 macroF1=0.6333 epochs_run=17 H_alpha=0.6776722354515121 rho_last=3.9154159192721334 (16.4s)
+[48/60] config=tsnet_vanilla seed=49 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed49.jsonl
+    acc=0.7871 macroF1=0.6822 epochs_run=25 H_alpha=None rho_last=None (18.0s)
+[49/60] config=full seed=50 -> results_replication_nppad_tsnet/diagnostics/full_seed50.jsonl
+    acc=0.7722 macroF1=0.6183 epochs_run=15 H_alpha=0.3076519899203981 rho_last=2.655701910269336 (14.9s)
+[50/60] config=w/o_spectral seed=50 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed50.jsonl
+    acc=0.7825 macroF1=0.6665 epochs_run=17 H_alpha=None rho_last=None (13.0s)
+[51/60] config=w/o_temporal seed=50 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed50.jsonl
+    acc=0.6398 macroF1=0.5182 epochs_run=20 H_alpha=None rho_last=None (7.4s)
+[52/60] config=w/o_fusion seed=50 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed50.jsonl
+    acc=0.7768 macroF1=0.6977 epochs_run=17 H_alpha=None rho_last=1.7703137417231765 (15.7s)
+[53/60] config=w/o_gating seed=50 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed50.jsonl
+    acc=0.7768 macroF1=0.6880 epochs_run=21 H_alpha=0.6663163182227548 rho_last=2.579201388056312 (19.5s)
+[54/60] config=tsnet_vanilla seed=50 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed50.jsonl
+    acc=0.7791 macroF1=0.6822 epochs_run=17 H_alpha=None rho_last=None (12.7s)
+[55/60] config=full seed=51 -> results_replication_nppad_tsnet/diagnostics/full_seed51.jsonl
+    acc=0.7618 macroF1=0.5780 epochs_run=14 H_alpha=0.23184186117959665 rho_last=4.320802401997495 (14.1s)
+[56/60] config=w/o_spectral seed=51 -> results_replication_nppad_tsnet/diagnostics/wo_spectral_seed51.jsonl
+    acc=0.7860 macroF1=0.7144 epochs_run=23 H_alpha=None rho_last=None (17.1s)
+[57/60] config=w/o_temporal seed=51 -> results_replication_nppad_tsnet/diagnostics/wo_temporal_seed51.jsonl
+    acc=0.6295 macroF1=0.5060 epochs_run=20 H_alpha=None rho_last=None (7.4s)
+[58/60] config=w/o_fusion seed=51 -> results_replication_nppad_tsnet/diagnostics/wo_fusion_seed51.jsonl
+    acc=0.7768 macroF1=0.6272 epochs_run=24 H_alpha=None rho_last=1.6549959587493366 (21.3s)
+[59/60] config=w/o_gating seed=51 -> results_replication_nppad_tsnet/diagnostics/wo_gating_seed51.jsonl
+    acc=0.7722 macroF1=0.6776 epochs_run=14 H_alpha=0.6407509496522404 rho_last=2.6909210592434283 (13.7s)
+[60/60] config=tsnet_vanilla seed=51 -> results_replication_nppad_tsnet/diagnostics/tsnet_vanilla_seed51.jsonl
+    acc=0.7883 macroF1=0.6638 epochs_run=13 H_alpha=None rho_last=None (10.0s)
+[done] outputs written to results_replication_nppad_tsnet/: results_table.csv, remedy_table.csv, significance.csv, diagnostics/*.jsonl, protocol_report.json
+===== Cell A DONE in 17.0 min =====
+
+===== Cell B START 21:10:03 =====
+/usr/local/bin/python3 -m atsf_dcg.run_experiments --cell replication --dataset tep --arch atsf --data-root /mnt/workspace/TEP --configs full w/o_spectral w/o_temporal w/o_fusion w/o_gating --seeds 42 43 44 45 46 47 48 49 50 51 --degradation --log-epoch-indicators
+[setup] data=tep:/mnt/workspace/TEP seeds=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51] cell=replication dataset=tep arch=atsf configs=['full', 'w/o_spectral', 'w/o_temporal', 'w/o_fusion', 'w/o_gating'] epochs=100 device=cuda
+[1/50] config=full seed=42 -> results_replication_tep_atsf/diagnostics/full_seed42.jsonl
+    acc=0.9912 macroF1=0.9910 epochs_run=14 H_alpha=0.31242891380312227 rho_last=0.933110933529584 (9.6s)
+[2/50] config=w/o_spectral seed=42 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed42.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=24 H_alpha=None rho_last=None (9.5s)
+[3/50] config=w/o_temporal seed=42 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed42.jsonl
+    acc=0.9056 macroF1=0.9032 epochs_run=28 H_alpha=None rho_last=None (11.0s)
+[4/50] config=w/o_fusion seed=42 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed42.jsonl
+    acc=0.9912 macroF1=0.9912 epochs_run=17 H_alpha=None rho_last=0.9467110861116166 (9.2s)
+[5/50] config=w/o_gating seed=42 -> results_replication_tep_atsf/diagnostics/wo_gating_seed42.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=22 H_alpha=0.3713872157034558 rho_last=1.6175955929064487 (11.9s)
+[6/50] config=full seed=43 -> results_replication_tep_atsf/diagnostics/full_seed43.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=14 H_alpha=0.4192857233371794 rho_last=1.8630012496756347 (8.4s)
+[7/50] config=w/o_spectral seed=43 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed43.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=23 H_alpha=None rho_last=None (9.2s)
+[8/50] config=w/o_temporal seed=43 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed43.jsonl
+    acc=0.9171 macroF1=0.9182 epochs_run=49 H_alpha=None rho_last=None (18.6s)
+[9/50] config=w/o_fusion seed=43 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed43.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=29 H_alpha=None rho_last=0.5101535715342614 (14.8s)
+[10/50] config=w/o_gating seed=43 -> results_replication_tep_atsf/diagnostics/wo_gating_seed43.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=21 H_alpha=0.38201402109003874 rho_last=1.0444599326722965 (11.5s)
+[11/50] config=full seed=44 -> results_replication_tep_atsf/diagnostics/full_seed44.jsonl
+    acc=0.9912 macroF1=0.9911 epochs_run=25 H_alpha=0.29946792203660616 rho_last=0.644585872464356 (14.0s)
+[12/50] config=w/o_spectral seed=44 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed44.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=23 H_alpha=None rho_last=None (9.1s)
+[13/50] config=w/o_temporal seed=44 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed44.jsonl
+    acc=0.9136 macroF1=0.9114 epochs_run=26 H_alpha=None rho_last=None (10.2s)
+[14/50] config=w/o_fusion seed=44 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed44.jsonl
+    acc=0.9903 macroF1=0.9903 epochs_run=16 H_alpha=None rho_last=0.43114823146371334 (8.5s)
+[15/50] config=w/o_gating seed=44 -> results_replication_tep_atsf/diagnostics/wo_gating_seed44.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=25 H_alpha=0.3451819296482424 rho_last=2.8660581614376293 (13.1s)
+[16/50] config=full seed=45 -> results_replication_tep_atsf/diagnostics/full_seed45.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=32 H_alpha=0.3138389359325855 rho_last=2.163785530577517 (17.4s)
+[17/50] config=w/o_spectral seed=45 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed45.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=19 H_alpha=None rho_last=None (7.8s)
+[18/50] config=w/o_temporal seed=45 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed45.jsonl
+    acc=0.9074 macroF1=0.9031 epochs_run=29 H_alpha=None rho_last=None (11.4s)
+[19/50] config=w/o_fusion seed=45 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed45.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=30 H_alpha=None rho_last=0.6370626347530992 (15.3s)
+[20/50] config=w/o_gating seed=45 -> results_replication_tep_atsf/diagnostics/wo_gating_seed45.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=23 H_alpha=0.3741115750823108 rho_last=1.467104949175426 (12.4s)
+[21/50] config=full seed=46 -> results_replication_tep_atsf/diagnostics/full_seed46.jsonl
+    acc=0.9885 macroF1=0.9885 epochs_run=16 H_alpha=0.36991724323196534 rho_last=0.41865550562554593 (9.5s)
+[22/50] config=w/o_spectral seed=46 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed46.jsonl
+    acc=0.9974 macroF1=0.9973 epochs_run=17 H_alpha=None rho_last=None (7.1s)
+[23/50] config=w/o_temporal seed=46 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed46.jsonl
+    acc=0.9048 macroF1=0.9010 epochs_run=27 H_alpha=None rho_last=None (10.7s)
+[24/50] config=w/o_fusion seed=46 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed46.jsonl
+    acc=0.9894 macroF1=0.9894 epochs_run=22 H_alpha=None rho_last=0.47327012400994595 (11.4s)
+[25/50] config=w/o_gating seed=46 -> results_replication_tep_atsf/diagnostics/wo_gating_seed46.jsonl
+    acc=0.9912 macroF1=0.9911 epochs_run=25 H_alpha=0.3782516832772646 rho_last=2.3599823960681694 (13.2s)
+[26/50] config=full seed=47 -> results_replication_tep_atsf/diagnostics/full_seed47.jsonl
+    acc=0.9832 macroF1=0.9830 epochs_run=14 H_alpha=0.31550125184622135 rho_last=0.9425293257692743 (8.4s)
+[27/50] config=w/o_spectral seed=47 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed47.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=18 H_alpha=None rho_last=None (7.4s)
+[28/50] config=w/o_temporal seed=47 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed47.jsonl
+    acc=0.9074 macroF1=0.9047 epochs_run=41 H_alpha=None rho_last=None (15.5s)
+[29/50] config=w/o_fusion seed=47 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed47.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=24 H_alpha=None rho_last=0.4201576444388805 (12.4s)
+[30/50] config=w/o_gating seed=47 -> results_replication_tep_atsf/diagnostics/wo_gating_seed47.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=24 H_alpha=0.3802587848065644 rho_last=2.289333886334611 (12.8s)
+[31/50] config=full seed=48 -> results_replication_tep_atsf/diagnostics/full_seed48.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=16 H_alpha=0.26343311139265563 rho_last=0.44704745692779474 (9.4s)
+[32/50] config=w/o_spectral seed=48 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed48.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=18 H_alpha=None rho_last=None (7.3s)
+[33/50] config=w/o_temporal seed=48 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed48.jsonl
+    acc=0.9074 macroF1=0.9097 epochs_run=26 H_alpha=None rho_last=None (10.3s)
+[34/50] config=w/o_fusion seed=48 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed48.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=17 H_alpha=None rho_last=0.39559803450385184 (9.1s)
+[35/50] config=w/o_gating seed=48 -> results_replication_tep_atsf/diagnostics/wo_gating_seed48.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=17 H_alpha=0.35021471553754063 rho_last=0.7432814507018378 (9.5s)
+[36/50] config=full seed=49 -> results_replication_tep_atsf/diagnostics/full_seed49.jsonl
+    acc=0.9921 macroF1=0.9920 epochs_run=44 H_alpha=0.3134347068594184 rho_last=1.3078027055453871 (23.9s)
+[37/50] config=w/o_spectral seed=49 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed49.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=18 H_alpha=None rho_last=None (7.5s)
+[38/50] config=w/o_temporal seed=49 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed49.jsonl
+    acc=0.9101 macroF1=0.9117 epochs_run=26 H_alpha=None rho_last=None (10.3s)
+[39/50] config=w/o_fusion seed=49 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed49.jsonl
+    acc=0.9903 macroF1=0.9903 epochs_run=16 H_alpha=None rho_last=0.6633066243141236 (8.6s)
+[40/50] config=w/o_gating seed=49 -> results_replication_tep_atsf/diagnostics/wo_gating_seed49.jsonl
+    acc=0.9974 macroF1=0.9974 epochs_run=34 H_alpha=0.33767988829967005 rho_last=7.460421123889402 (17.3s)
+[41/50] config=full seed=50 -> results_replication_tep_atsf/diagnostics/full_seed50.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=23 H_alpha=0.42654178892307015 rho_last=0.6397489121071114 (12.8s)
+[42/50] config=w/o_spectral seed=50 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed50.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=19 H_alpha=None rho_last=None (7.6s)
+[43/50] config=w/o_temporal seed=50 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed50.jsonl
+    acc=0.9145 macroF1=0.9161 epochs_run=23 H_alpha=None rho_last=None (9.0s)
+[44/50] config=w/o_fusion seed=50 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed50.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=28 H_alpha=None rho_last=0.4891686766874898 (14.1s)
+[45/50] config=w/o_gating seed=50 -> results_replication_tep_atsf/diagnostics/wo_gating_seed50.jsonl
+    acc=0.9921 macroF1=0.9921 epochs_run=29 H_alpha=0.48803265669850915 rho_last=1.3600134387807565 (14.9s)
+[46/50] config=full seed=51 -> results_replication_tep_atsf/diagnostics/full_seed51.jsonl
+    acc=0.9956 macroF1=0.9956 epochs_run=20 H_alpha=0.35443022910926625 rho_last=0.6883550242442313 (11.2s)
+[47/50] config=w/o_spectral seed=51 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed51.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=21 H_alpha=None rho_last=None (8.4s)
+[48/50] config=w/o_temporal seed=51 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed51.jsonl
+    acc=0.9109 macroF1=0.9103 epochs_run=28 H_alpha=None rho_last=None (10.9s)
+[49/50] config=w/o_fusion seed=51 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed51.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=30 H_alpha=None rho_last=0.5928132445871754 (15.3s)
+[50/50] config=w/o_gating seed=51 -> results_replication_tep_atsf/diagnostics/wo_gating_seed51.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=15 H_alpha=0.33226361951723105 rho_last=0.7018179425905332 (8.5s)
+[done] outputs written to results_replication_tep_atsf/: results_table.csv, remedy_table.csv, significance.csv, diagnostics/*.jsonl, protocol_report.json
+===== Cell B DONE in 9.8 min =====
+
+===== Cell C START 21:19:50 =====
+/usr/local/bin/python3 -m atsf_dcg.run_experiments --cell replication --dataset tep --arch tsnet --data-root /mnt/workspace/TEP --configs full w/o_spectral w/o_temporal w/o_fusion w/o_gating tsnet_vanilla --seeds 42 43 44 45 46 47 48 49 50 51 --degradation --log-epoch-indicators
+[setup] data=tep:/mnt/workspace/TEP seeds=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51] cell=replication dataset=tep arch=tsnet configs=['full', 'w/o_spectral', 'w/o_temporal', 'w/o_fusion', 'w/o_gating', 'tsnet_vanilla'] epochs=100 device=cuda
+[1/60] config=full seed=42 -> results_replication_tep_tsnet/diagnostics/full_seed42.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=22 H_alpha=0.2964393071965022 rho_last=0.8899085612087532 (25.9s)
+[2/60] config=w/o_spectral seed=42 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed42.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=24 H_alpha=None rho_last=None (20.3s)
+[3/60] config=w/o_temporal seed=42 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed42.jsonl
+    acc=0.9056 macroF1=0.9032 epochs_run=28 H_alpha=None rho_last=None (10.8s)
+[4/60] config=w/o_fusion seed=42 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed42.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=46 H_alpha=None rho_last=0.7693420466526572 (46.5s)
+[5/60] config=w/o_gating seed=42 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed42.jsonl
+    acc=0.9956 macroF1=0.9956 epochs_run=29 H_alpha=0.3372629271359254 rho_last=1.6192932420917858 (30.9s)
+[6/60] config=tsnet_vanilla seed=42 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed42.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=25 H_alpha=None rho_last=None (20.5s)
+[7/60] config=full seed=43 -> results_replication_tep_tsnet/diagnostics/full_seed43.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=39 H_alpha=0.36426415167314924 rho_last=0.2527927948680891 (41.7s)
+[8/60] config=w/o_spectral seed=43 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed43.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=17 H_alpha=None rho_last=None (14.7s)
+[9/60] config=w/o_temporal seed=43 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed43.jsonl
+    acc=0.9171 macroF1=0.9182 epochs_run=49 H_alpha=None rho_last=None (18.1s)
+[10/60] config=w/o_fusion seed=43 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed43.jsonl
+    acc=0.9956 macroF1=0.9956 epochs_run=21 H_alpha=None rho_last=0.5588063495440168 (22.1s)
+[11/60] config=w/o_gating seed=43 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed43.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=20 H_alpha=0.3678035309521458 rho_last=1.3172418952213376 (21.7s)
+[12/60] config=tsnet_vanilla seed=43 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed43.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=18 H_alpha=None rho_last=None (15.1s)
+[13/60] config=full seed=44 -> results_replication_tep_tsnet/diagnostics/full_seed44.jsonl
+    acc=0.9903 macroF1=0.9902 epochs_run=16 H_alpha=0.32087504439728354 rho_last=0.8680670741533931 (18.3s)
+[14/60] config=w/o_spectral seed=44 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed44.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=26 H_alpha=None rho_last=None (21.9s)
+[15/60] config=w/o_temporal seed=44 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed44.jsonl
+    acc=0.9136 macroF1=0.9114 epochs_run=26 H_alpha=None rho_last=None (10.1s)
+[16/60] config=w/o_fusion seed=44 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed44.jsonl
+    acc=0.9929 macroF1=0.9930 epochs_run=18 H_alpha=None rho_last=0.433529586898566 (19.1s)
+[17/60] config=w/o_gating seed=44 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed44.jsonl
+    acc=0.9956 macroF1=0.9956 epochs_run=18 H_alpha=0.3361396036734576 rho_last=1.2752650596252162 (19.6s)
+[18/60] config=tsnet_vanilla seed=44 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed44.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=20 H_alpha=None rho_last=None (16.4s)
+[19/60] config=full seed=45 -> results_replication_tep_tsnet/diagnostics/full_seed45.jsonl
+    acc=0.9912 macroF1=0.9911 epochs_run=25 H_alpha=0.3583843377657579 rho_last=0.5308942137034532 (27.2s)
+[20/60] config=w/o_spectral seed=45 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed45.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=26 H_alpha=None rho_last=None (21.8s)
+[21/60] config=w/o_temporal seed=45 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed45.jsonl
+    acc=0.9074 macroF1=0.9031 epochs_run=29 H_alpha=None rho_last=None (11.0s)
+[22/60] config=w/o_fusion seed=45 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed45.jsonl
+    acc=0.9921 macroF1=0.9921 epochs_run=23 H_alpha=None rho_last=0.4420631566989891 (23.8s)
+[23/60] config=w/o_gating seed=45 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed45.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=21 H_alpha=0.375729834829922 rho_last=1.2664258057059588 (22.6s)
+[24/60] config=tsnet_vanilla seed=45 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed45.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=18 H_alpha=None rho_last=None (14.9s)
+[25/60] config=full seed=46 -> results_replication_tep_tsnet/diagnostics/full_seed46.jsonl
+    acc=0.9912 macroF1=0.9911 epochs_run=22 H_alpha=0.30675669649414183 rho_last=2.9474028917363775 (24.2s)
+[26/60] config=w/o_spectral seed=46 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed46.jsonl
+    acc=0.9974 macroF1=0.9974 epochs_run=23 H_alpha=None rho_last=None (19.3s)
+[27/60] config=w/o_temporal seed=46 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed46.jsonl
+    acc=0.9048 macroF1=0.9010 epochs_run=27 H_alpha=None rho_last=None (10.4s)
+[28/60] config=w/o_fusion seed=46 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed46.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=33 H_alpha=None rho_last=0.7320785855488876 (34.1s)
+[29/60] config=w/o_gating seed=46 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed46.jsonl
+    acc=0.9912 macroF1=0.9912 epochs_run=29 H_alpha=0.3936723796902049 rho_last=1.0226089265045535 (31.0s)
+[30/60] config=tsnet_vanilla seed=46 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed46.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=25 H_alpha=None rho_last=None (20.4s)
+[31/60] config=full seed=47 -> results_replication_tep_tsnet/diagnostics/full_seed47.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=29 H_alpha=0.3793393112828373 rho_last=0.6284489531093946 (31.8s)
+[32/60] config=w/o_spectral seed=47 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed47.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=20 H_alpha=None rho_last=None (17.1s)
+[33/60] config=w/o_temporal seed=47 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed47.jsonl
+    acc=0.9074 macroF1=0.9047 epochs_run=41 H_alpha=None rho_last=None (15.2s)
+[34/60] config=w/o_fusion seed=47 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed47.jsonl
+    acc=0.9912 macroF1=0.9912 epochs_run=21 H_alpha=None rho_last=0.4422704716568351 (21.9s)
+[35/60] config=w/o_gating seed=47 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed47.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=31 H_alpha=0.33348538002727585 rho_last=2.9268454170894804 (32.8s)
+[36/60] config=tsnet_vanilla seed=47 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed47.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=19 H_alpha=None rho_last=None (15.9s)
+[37/60] config=full seed=48 -> results_replication_tep_tsnet/diagnostics/full_seed48.jsonl
+    acc=0.9912 macroF1=0.9912 epochs_run=17 H_alpha=0.36678317310478975 rho_last=0.6758235945666116 (19.2s)
+[38/60] config=w/o_spectral seed=48 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed48.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=20 H_alpha=None rho_last=None (17.0s)
+[39/60] config=w/o_temporal seed=48 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed48.jsonl
+    acc=0.9074 macroF1=0.9097 epochs_run=26 H_alpha=None rho_last=None (10.2s)
+[40/60] config=w/o_fusion seed=48 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed48.jsonl
+    acc=0.9956 macroF1=0.9956 epochs_run=31 H_alpha=None rho_last=0.42872226156216303 (32.0s)
+[41/60] config=w/o_gating seed=48 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed48.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=22 H_alpha=0.30447527238070415 rho_last=0.5190152044386263 (24.0s)
+[42/60] config=tsnet_vanilla seed=48 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed48.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=16 H_alpha=None rho_last=None (13.6s)
+[43/60] config=full seed=49 -> results_replication_tep_tsnet/diagnostics/full_seed49.jsonl
+    acc=0.9859 macroF1=0.9858 epochs_run=14 H_alpha=0.4155500404449932 rho_last=1.9498708653316361 (16.1s)
+[44/60] config=w/o_spectral seed=49 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed49.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=19 H_alpha=None rho_last=None (16.2s)
+[45/60] config=w/o_temporal seed=49 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed49.jsonl
+    acc=0.9101 macroF1=0.9117 epochs_run=26 H_alpha=None rho_last=None (10.0s)
+[46/60] config=w/o_fusion seed=49 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed49.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=20 H_alpha=None rho_last=0.4427756947707844 (21.0s)
+[47/60] config=w/o_gating seed=49 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed49.jsonl
+    acc=0.9974 macroF1=0.9974 epochs_run=20 H_alpha=0.3696565982073684 rho_last=3.415885451669582 (21.6s)
+[48/60] config=tsnet_vanilla seed=49 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed49.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=18 H_alpha=None rho_last=None (14.9s)
+[49/60] config=full seed=50 -> results_replication_tep_tsnet/diagnostics/full_seed50.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=19 H_alpha=0.3802907910282522 rho_last=0.6811615673563318 (21.1s)
+[50/60] config=w/o_spectral seed=50 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed50.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=21 H_alpha=None rho_last=None (17.9s)
+[51/60] config=w/o_temporal seed=50 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed50.jsonl
+    acc=0.9145 macroF1=0.9161 epochs_run=23 H_alpha=None rho_last=None (9.0s)
+[52/60] config=w/o_fusion seed=50 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed50.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=17 H_alpha=None rho_last=1.4312359507498742 (18.1s)
+[53/60] config=w/o_gating seed=50 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed50.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=39 H_alpha=0.4071249560012253 rho_last=1.0221873818588685 (40.5s)
+[54/60] config=tsnet_vanilla seed=50 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed50.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=20 H_alpha=None rho_last=None (16.4s)
+[55/60] config=full seed=51 -> results_replication_tep_tsnet/diagnostics/full_seed51.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=21 H_alpha=0.26909109697356254 rho_last=7.037947155509644 (23.3s)
+[56/60] config=w/o_spectral seed=51 -> results_replication_tep_tsnet/diagnostics/wo_spectral_seed51.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=18 H_alpha=None rho_last=None (15.6s)
+[57/60] config=w/o_temporal seed=51 -> results_replication_tep_tsnet/diagnostics/wo_temporal_seed51.jsonl
+    acc=0.9109 macroF1=0.9103 epochs_run=28 H_alpha=None rho_last=None (10.8s)
+[58/60] config=w/o_fusion seed=51 -> results_replication_tep_tsnet/diagnostics/wo_fusion_seed51.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=24 H_alpha=None rho_last=0.6362719299342681 (25.0s)
+[59/60] config=w/o_gating seed=51 -> results_replication_tep_tsnet/diagnostics/wo_gating_seed51.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=23 H_alpha=0.38680237217803587 rho_last=0.3916983791441406 (24.7s)
+[60/60] config=tsnet_vanilla seed=51 -> results_replication_tep_tsnet/diagnostics/tsnet_vanilla_seed51.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=17 H_alpha=None rho_last=None (14.3s)
+[done] outputs written to results_replication_tep_tsnet/: results_table.csv, remedy_table.csv, significance.csv, diagnostics/*.jsonl, protocol_report.json
+===== Cell C DONE in 21.0 min =====
+
+===== Cell O START 21:40:50 =====
+/usr/local/bin/python3 -m atsf_dcg.run_experiments --cell full --dataset nppad --arch atsf --data-root /mnt/workspace/NuclearPowerPlantAccidentData-main/Operation_csv_data --configs full w/o_spectral w/o_temporal w/o_fusion w/o_dynamic_gating w/o_gating --out-dir results_cellO_key --seeds 42 43 44 45 46 47 48 49 50 51 --degradation --log-epoch-indicators
+[setup] data=/mnt/workspace/NuclearPowerPlantAccidentData-main/Operation_csv_data seeds=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51] cell=full dataset=nppad arch=atsf configs=['full', 'w/o_spectral', 'w/o_temporal', 'w/o_fusion', 'w/o_dynamic_gating', 'w/o_gating'] epochs=100 device=cuda
+[1/60] config=full seed=42 -> results_cellO_key/diagnostics/full_seed42.jsonl
+    acc=0.7848 macroF1=0.5805 epochs_run=13 H_alpha=0.5051122770470712 rho_last=1.086714801380789 (8.0s)
+[2/60] config=w/o_spectral seed=42 -> results_cellO_key/diagnostics/wo_spectral_seed42.jsonl
+    acc=0.7848 macroF1=0.6884 epochs_run=17 H_alpha=None rho_last=None (6.3s)
+[3/60] config=w/o_temporal seed=42 -> results_cellO_key/diagnostics/wo_temporal_seed42.jsonl
+    acc=0.6410 macroF1=0.5537 epochs_run=23 H_alpha=None rho_last=None (7.9s)
+[4/60] config=w/o_fusion seed=42 -> results_cellO_key/diagnostics/wo_fusion_seed42.jsonl
+    acc=0.7825 macroF1=0.7107 epochs_run=23 H_alpha=None rho_last=1.4589542760604226 (10.4s)
+[5/60] config=w/o_dynamic_gating seed=42 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed42.jsonl
+    acc=0.7802 macroF1=0.6350 epochs_run=31 H_alpha=0.596923432934654 rho_last=2.232824692660676 (14.9s)
+[6/60] config=w/o_gating seed=42 -> results_cellO_key/diagnostics/wo_gating_seed42.jsonl
+    acc=0.7768 macroF1=0.6784 epochs_run=17 H_alpha=0.6825711115330008 rho_last=1.611101842832757 (8.4s)
+[7/60] config=full seed=43 -> results_cellO_key/diagnostics/full_seed43.jsonl
+    acc=0.7756 macroF1=0.6146 epochs_run=24 H_alpha=0.5354764465148346 rho_last=1.9465957466422728 (11.8s)
+[8/60] config=w/o_spectral seed=43 -> results_cellO_key/diagnostics/wo_spectral_seed43.jsonl
+    acc=0.7814 macroF1=0.6935 epochs_run=27 H_alpha=None rho_last=None (9.3s)
+[9/60] config=w/o_temporal seed=43 -> results_cellO_key/diagnostics/wo_temporal_seed43.jsonl
+    acc=0.6479 macroF1=0.5198 epochs_run=30 H_alpha=None rho_last=None (10.1s)
+[10/60] config=w/o_fusion seed=43 -> results_cellO_key/diagnostics/wo_fusion_seed43.jsonl
+    acc=0.7963 macroF1=0.6811 epochs_run=33 H_alpha=None rho_last=1.0260080829131224 (14.5s)
+[11/60] config=w/o_dynamic_gating seed=43 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed43.jsonl
+    acc=0.7791 macroF1=0.7079 epochs_run=23 H_alpha=0.5832429681929777 rho_last=1.0984340685030172 (11.5s)
+[12/60] config=w/o_gating seed=43 -> results_cellO_key/diagnostics/wo_gating_seed43.jsonl
+    acc=0.7779 macroF1=0.7006 epochs_run=39 H_alpha=0.5185037258373748 rho_last=2.9530077561125667 (17.2s)
+[13/60] config=full seed=44 -> results_cellO_key/diagnostics/full_seed44.jsonl
+    acc=0.7814 macroF1=0.6136 epochs_run=13 H_alpha=0.5764867246872117 rho_last=0.8539961302988762 (7.0s)
+[14/60] config=w/o_spectral seed=44 -> results_cellO_key/diagnostics/wo_spectral_seed44.jsonl
+    acc=0.7871 macroF1=0.6802 epochs_run=25 H_alpha=None rho_last=None (8.6s)
+[15/60] config=w/o_temporal seed=44 -> results_cellO_key/diagnostics/wo_temporal_seed44.jsonl
+    acc=0.6628 macroF1=0.5102 epochs_run=33 H_alpha=None rho_last=None (11.0s)
+[16/60] config=w/o_fusion seed=44 -> results_cellO_key/diagnostics/wo_fusion_seed44.jsonl
+    acc=0.7837 macroF1=0.5781 epochs_run=13 H_alpha=None rho_last=1.2620263324682135 (6.5s)
+[17/60] config=w/o_dynamic_gating seed=44 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed44.jsonl
+    acc=0.7906 macroF1=0.5566 epochs_run=13 H_alpha=0.5426290560465716 rho_last=2.4255166917148907 (7.2s)
+[18/60] config=w/o_gating seed=44 -> results_cellO_key/diagnostics/wo_gating_seed44.jsonl
+    acc=0.7618 macroF1=0.6986 epochs_run=18 H_alpha=0.5926244180246666 rho_last=1.6189414302070708 (8.7s)
+[19/60] config=full seed=45 -> results_cellO_key/diagnostics/full_seed45.jsonl
+    acc=0.7756 macroF1=0.5919 epochs_run=36 H_alpha=0.36339259175639066 rho_last=1.652193616113481 (16.8s)
+[20/60] config=w/o_spectral seed=45 -> results_cellO_key/diagnostics/wo_spectral_seed45.jsonl
+    acc=0.7986 macroF1=0.6728 epochs_run=17 H_alpha=None rho_last=None (6.3s)
+[21/60] config=w/o_temporal seed=45 -> results_cellO_key/diagnostics/wo_temporal_seed45.jsonl
+    acc=0.6352 macroF1=0.5101 epochs_run=51 H_alpha=None rho_last=None (16.5s)
+[22/60] config=w/o_fusion seed=45 -> results_cellO_key/diagnostics/wo_fusion_seed45.jsonl
+    acc=0.7687 macroF1=0.6851 epochs_run=22 H_alpha=None rho_last=1.3671277996767648 (10.1s)
+[23/60] config=w/o_dynamic_gating seed=45 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed45.jsonl
+    acc=0.7710 macroF1=0.5546 epochs_run=13 H_alpha=0.5301928836453459 rho_last=1.895011614947637 (7.2s)
+[24/60] config=w/o_gating seed=45 -> results_cellO_key/diagnostics/wo_gating_seed45.jsonl
+    acc=0.7814 macroF1=0.6963 epochs_run=17 H_alpha=0.5512893471936978 rho_last=1.8947346342001388 (8.4s)
+[25/60] config=full seed=46 -> results_cellO_key/diagnostics/full_seed46.jsonl
+    acc=0.7837 macroF1=0.5193 epochs_run=13 H_alpha=0.5559491538553825 rho_last=1.7189311170584562 (7.0s)
+[26/60] config=w/o_spectral seed=46 -> results_cellO_key/diagnostics/wo_spectral_seed46.jsonl
+    acc=0.7906 macroF1=0.6860 epochs_run=17 H_alpha=None rho_last=None (6.2s)
+[27/60] config=w/o_temporal seed=46 -> results_cellO_key/diagnostics/wo_temporal_seed46.jsonl
+    acc=0.6329 macroF1=0.5115 epochs_run=32 H_alpha=None rho_last=None (10.8s)
+[28/60] config=w/o_fusion seed=46 -> results_cellO_key/diagnostics/wo_fusion_seed46.jsonl
+    acc=0.7883 macroF1=0.6206 epochs_run=13 H_alpha=None rho_last=1.466685066657901 (6.6s)
+[29/60] config=w/o_dynamic_gating seed=46 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed46.jsonl
+    acc=0.7768 macroF1=0.6294 epochs_run=21 H_alpha=0.512228377943568 rho_last=2.9763979258487385 (10.6s)
+[30/60] config=w/o_gating seed=46 -> results_cellO_key/diagnostics/wo_gating_seed46.jsonl
+    acc=0.7848 macroF1=0.6303 epochs_run=22 H_alpha=0.46424686976778246 rho_last=1.7095813851691513 (10.4s)
+[31/60] config=full seed=47 -> results_cellO_key/diagnostics/full_seed47.jsonl
+    acc=0.7699 macroF1=0.6492 epochs_run=23 H_alpha=0.5344967767934252 rho_last=1.422926336363203 (11.3s)
+[32/60] config=w/o_spectral seed=47 -> results_cellO_key/diagnostics/wo_spectral_seed47.jsonl
+    acc=0.7733 macroF1=0.5974 epochs_run=12 H_alpha=None rho_last=None (4.8s)
+[33/60] config=w/o_temporal seed=47 -> results_cellO_key/diagnostics/wo_temporal_seed47.jsonl
+    acc=0.6467 macroF1=0.5332 epochs_run=46 H_alpha=None rho_last=None (14.6s)
+[34/60] config=w/o_fusion seed=47 -> results_cellO_key/diagnostics/wo_fusion_seed47.jsonl
+    acc=0.7733 macroF1=0.4943 epochs_run=12 H_alpha=None rho_last=1.117754962164193 (6.0s)
+[35/60] config=w/o_dynamic_gating seed=47 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed47.jsonl
+    acc=0.7629 macroF1=0.6785 epochs_run=18 H_alpha=0.5415839635921704 rho_last=2.3376109826343683 (9.2s)
+[36/60] config=w/o_gating seed=47 -> results_cellO_key/diagnostics/wo_gating_seed47.jsonl
+    acc=0.7848 macroF1=0.6083 epochs_run=13 H_alpha=0.606305269414181 rho_last=2.6789825023281333 (6.6s)
+[37/60] config=full seed=48 -> results_cellO_key/diagnostics/full_seed48.jsonl
+    acc=0.7664 macroF1=0.5649 epochs_run=15 H_alpha=0.6104405623855347 rho_last=1.4043683208044406 (7.8s)
+[38/60] config=w/o_spectral seed=48 -> results_cellO_key/diagnostics/wo_spectral_seed48.jsonl
+    acc=0.7883 macroF1=0.6326 epochs_run=17 H_alpha=None rho_last=None (6.2s)
+[39/60] config=w/o_temporal seed=48 -> results_cellO_key/diagnostics/wo_temporal_seed48.jsonl
+    acc=0.6421 macroF1=0.5278 epochs_run=45 H_alpha=None rho_last=None (14.3s)
+[40/60] config=w/o_fusion seed=48 -> results_cellO_key/diagnostics/wo_fusion_seed48.jsonl
+    acc=0.7756 macroF1=0.5054 epochs_run=13 H_alpha=None rho_last=1.0338343241698613 (6.5s)
+[41/60] config=w/o_dynamic_gating seed=48 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed48.jsonl
+    acc=0.7825 macroF1=0.5756 epochs_run=43 H_alpha=0.5465407617195581 rho_last=0.7018747163182637 (20.1s)
+[42/60] config=w/o_gating seed=48 -> results_cellO_key/diagnostics/wo_gating_seed48.jsonl
+    acc=0.7998 macroF1=0.6466 epochs_run=13 H_alpha=0.6352140125876167 rho_last=1.9309683013801648 (6.7s)
+[43/60] config=full seed=49 -> results_cellO_key/diagnostics/full_seed49.jsonl
+    acc=0.7871 macroF1=0.7016 epochs_run=35 H_alpha=0.5078818623501463 rho_last=1.783548512748586 (16.3s)
+[44/60] config=w/o_spectral seed=49 -> results_cellO_key/diagnostics/wo_spectral_seed49.jsonl
+    acc=0.7917 macroF1=0.6960 epochs_run=31 H_alpha=None rho_last=None (10.3s)
+[45/60] config=w/o_temporal seed=49 -> results_cellO_key/diagnostics/wo_temporal_seed49.jsonl
+    acc=0.6352 macroF1=0.5239 epochs_run=45 H_alpha=None rho_last=None (14.4s)
+[46/60] config=w/o_fusion seed=49 -> results_cellO_key/diagnostics/wo_fusion_seed49.jsonl
+    acc=0.7629 macroF1=0.6987 epochs_run=18 H_alpha=None rho_last=1.3393127377004692 (8.5s)
+[47/60] config=w/o_dynamic_gating seed=49 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed49.jsonl
+    acc=0.7722 macroF1=0.6347 epochs_run=13 H_alpha=0.5068546588603521 rho_last=1.0828400200290418 (7.2s)
+[48/60] config=w/o_gating seed=49 -> results_cellO_key/diagnostics/wo_gating_seed49.jsonl
+    acc=0.7906 macroF1=0.5621 epochs_run=13 H_alpha=0.5555461878613752 rho_last=1.7438535328500842 (6.7s)
+[49/60] config=full seed=50 -> results_cellO_key/diagnostics/full_seed50.jsonl
+    acc=0.7733 macroF1=0.6471 epochs_run=15 H_alpha=0.6008974468656336 rho_last=1.6527261985747224 (7.9s)
+[50/60] config=w/o_spectral seed=50 -> results_cellO_key/diagnostics/wo_spectral_seed50.jsonl
+    acc=0.7917 macroF1=0.6006 epochs_run=24 H_alpha=None rho_last=None (8.4s)
+[51/60] config=w/o_temporal seed=50 -> results_cellO_key/diagnostics/wo_temporal_seed50.jsonl
+    acc=0.6398 macroF1=0.5182 epochs_run=20 H_alpha=None rho_last=None (7.2s)
+[52/60] config=w/o_fusion seed=50 -> results_cellO_key/diagnostics/wo_fusion_seed50.jsonl
+    acc=0.7837 macroF1=0.7111 epochs_run=23 H_alpha=None rho_last=1.309200271795984 (10.5s)
+[53/60] config=w/o_dynamic_gating seed=50 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed50.jsonl
+    acc=0.7791 macroF1=0.4958 epochs_run=12 H_alpha=0.5787829715163718 rho_last=1.6034126718627153 (6.8s)
+[54/60] config=w/o_gating seed=50 -> results_cellO_key/diagnostics/wo_gating_seed50.jsonl
+    acc=0.7733 macroF1=0.6933 epochs_run=33 H_alpha=0.47059123808189973 rho_last=2.253475170781696 (14.9s)
+[55/60] config=full seed=51 -> results_cellO_key/diagnostics/full_seed51.jsonl
+    acc=0.7963 macroF1=0.6817 epochs_run=17 H_alpha=0.6017917820624734 rho_last=2.0130740218716796 (8.8s)
+[56/60] config=w/o_spectral seed=51 -> results_cellO_key/diagnostics/wo_spectral_seed51.jsonl
+    acc=0.7871 macroF1=0.7008 epochs_run=27 H_alpha=None rho_last=None (9.2s)
+[57/60] config=w/o_temporal seed=51 -> results_cellO_key/diagnostics/wo_temporal_seed51.jsonl
+    acc=0.6295 macroF1=0.5060 epochs_run=20 H_alpha=None rho_last=None (7.1s)
+[58/60] config=w/o_fusion seed=51 -> results_cellO_key/diagnostics/wo_fusion_seed51.jsonl
+    acc=0.7871 macroF1=0.6316 epochs_run=13 H_alpha=None rho_last=1.4697567560942735 (6.4s)
+[59/60] config=w/o_dynamic_gating seed=51 -> results_cellO_key/diagnostics/wo_dynamic_gating_seed51.jsonl
+    acc=0.7883 macroF1=0.7120 epochs_run=39 H_alpha=0.46727222895455967 rho_last=1.7407185331926276 (18.2s)
+[60/60] config=w/o_gating seed=51 -> results_cellO_key/diagnostics/wo_gating_seed51.jsonl
+    acc=0.7883 macroF1=0.6969 epochs_run=17 H_alpha=0.677869064785067 rho_last=2.9821610167352266 (8.3s)
+[done] outputs written to results_cellO_key/: results_table.csv, remedy_table.csv, significance.csv, diagnostics/*.jsonl, protocol_report.json
+===== Cell O DONE in 10.1 min =====
+
+===== Cell D START 21:50:53 =====
+/usr/local/bin/python3 -m atsf_dcg.run_experiments --cell replication --dataset paderborn --arch atsf --data-root /mnt/workspace/Paderborn --configs full w/o_spectral w/o_temporal w/o_fusion w/o_gating --out-dir results_replication_paderborn_atsf --seeds 42 43 44 45 46 47 48 49 50 51 --degradation --log-epoch-indicators
+[setup] data=paderborn:/mnt/workspace/Paderborn seeds=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51] cell=replication dataset=paderborn arch=atsf configs=['full', 'w/o_spectral', 'w/o_temporal', 'w/o_fusion', 'w/o_gating'] epochs=100 device=cuda
+[1/50] config=full seed=42 -> results_replication_paderborn_atsf/diagnostics/full_seed42.jsonl
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/workspace/project/atsf_dcg/run_experiments.py", line 789, in <module>
+    main(sys.argv[1:])
+  File "/mnt/workspace/project/atsf_dcg/run_experiments.py", line 785, in main
+    run(args)
+  File "/mnt/workspace/project/atsf_dcg/run_experiments.py", line 666, in run
+    res = train_one(cfg_run, bundle, log_path=log_path,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/project/atsf_dcg/train.py", line 323, in train_one
+    final["perm_null"] = diag.permutation_null_alpha(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/project/atsf_dcg/diagnostics.py", line 117, in permutation_null_alpha
+    _, cache = model(X, y_labels) if pass_labels else model(X)
+                                                      ^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/project/atsf_dcg/model.py", line 274, in forward
+    out, _ = self.lstm(seq)  # (B, T', 128)
+             ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/rnn.py", line 1123, in forward
+    result = _VF.lstm(
+             ^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 31.54 GiB. GPU 0 has a total capacity of 22.18 GiB of which 3.96 GiB is free. Process 155277 has 18.21 GiB memory in use. Of the allocated memory 15.97 GiB is allocated by PyTorch, and 1.95 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+===== Cell D FAILED (rc=1) after 13.7 min — STOPPING. Fix and rerun with: python3 run_all_cells.py A B C O =====

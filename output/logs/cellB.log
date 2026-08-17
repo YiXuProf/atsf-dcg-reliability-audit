@@ -1,0 +1,145 @@
+[setup] data=tep:/mnt/workspace/TEP seeds=[42, 43, 44, 45, 46, 47, 48, 49, 50, 51] cell=replication dataset=tep arch=atsf configs=['full', 'w/o_spectral', 'w/o_temporal', 'w/o_fusion', 'w/o_gating', 'full_r1', 'full_r2_gumbel'] epochs=100 device=cuda
+[1/70] config=full seed=42 -> results_replication_tep_atsf/diagnostics/full_seed42.jsonl
+/mnt/workspace/project/atsf_dcg/train.py:192: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  tot_loss += float(loss) * int(y.numel())
+    acc=0.9921 macroF1=0.9921 epochs_run=26 H_alpha=0.30788747758050766 rho_last=2.07459063681783 (23.1s)
+[2/70] config=w/o_spectral seed=42 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed42.jsonl
+    acc=0.9965 macroF1=0.9965 epochs_run=17 H_alpha=None rho_last=None (7.1s)
+[3/70] config=w/o_temporal seed=42 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed42.jsonl
+    acc=0.9118 macroF1=0.9054 epochs_run=20 H_alpha=None rho_last=None (8.3s)
+[4/70] config=w/o_fusion seed=42 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed42.jsonl
+    acc=0.9921 macroF1=0.9920 epochs_run=26 H_alpha=None rho_last=0.5729246273856213 (21.2s)
+[5/70] config=w/o_gating seed=42 -> results_replication_tep_atsf/diagnostics/wo_gating_seed42.jsonl
+    acc=0.9921 macroF1=0.9920 epochs_run=14 H_alpha=0.3955744114620206 rho_last=0.5842033736664123 (12.1s)
+[6/70] config=full_r1 seed=42 -> results_replication_tep_atsf/diagnostics/full_r1_seed42.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=23 H_alpha=0.3528221682692403 rho_last=0.028025932030213644 (23.1s)
+[7/70] config=full_r2_gumbel seed=42 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed42.jsonl
+    acc=0.9965 macroF1=0.9965 epochs_run=31 H_alpha=0.40652691805748126 rho_last=0.7428795148276465 (29.4s)
+[8/70] config=full seed=43 -> results_replication_tep_atsf/diagnostics/full_seed43.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=32 H_alpha=0.31418186430765077 rho_last=0.7193480661869421 (24.5s)
+[9/70] config=w/o_spectral seed=43 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed43.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=24 H_alpha=None rho_last=None (10.0s)
+[10/70] config=w/o_temporal seed=43 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed43.jsonl
+    acc=0.9127 macroF1=0.9117 epochs_run=26 H_alpha=None rho_last=None (11.0s)
+[11/70] config=w/o_fusion seed=43 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed43.jsonl
+    acc=0.9921 macroF1=0.9921 epochs_run=17 H_alpha=None rho_last=0.7262312396462267 (13.6s)
+[12/70] config=w/o_gating seed=43 -> results_replication_tep_atsf/diagnostics/wo_gating_seed43.jsonl
+    acc=0.9912 macroF1=0.9911 epochs_run=13 H_alpha=0.3599069781278234 rho_last=0.462601712859133 (11.0s)
+[13/70] config=full_r1 seed=43 -> results_replication_tep_atsf/diagnostics/full_r1_seed43.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=23 H_alpha=0.39515591132098105 rho_last=0.02633754403968236 (23.4s)
+[14/70] config=full_r2_gumbel seed=43 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed43.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=28 H_alpha=0.38055909278031536 rho_last=1.0851501671057846 (27.3s)
+[15/70] config=full seed=44 -> results_replication_tep_atsf/diagnostics/full_seed44.jsonl
+    acc=0.9921 macroF1=0.9921 epochs_run=19 H_alpha=0.35316178636590023 rho_last=0.8543022143090784 (16.5s)
+[16/70] config=w/o_spectral seed=44 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed44.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=20 H_alpha=None rho_last=None (8.3s)
+[17/70] config=w/o_temporal seed=44 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed44.jsonl
+    acc=0.9145 macroF1=0.9160 epochs_run=32 H_alpha=None rho_last=None (13.7s)
+[18/70] config=w/o_fusion seed=44 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed44.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=22 H_alpha=None rho_last=0.532549653838038 (18.4s)
+[19/70] config=w/o_gating seed=44 -> results_replication_tep_atsf/diagnostics/wo_gating_seed44.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=20 H_alpha=0.3393230287254454 rho_last=2.5960651010807645 (14.9s)
+[20/70] config=full_r1 seed=44 -> results_replication_tep_atsf/diagnostics/full_r1_seed44.jsonl
+    acc=0.9974 macroF1=0.9974 epochs_run=20 H_alpha=0.39285297345263326 rho_last=0.02717034061295422 (19.2s)
+[21/70] config=full_r2_gumbel seed=44 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed44.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=28 H_alpha=0.4073676459695574 rho_last=0.7585448732728107 (25.6s)
+[22/70] config=full seed=45 -> results_replication_tep_atsf/diagnostics/full_seed45.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=29 H_alpha=0.3328569405048192 rho_last=0.9916013694380379 (24.4s)
+[23/70] config=w/o_spectral seed=45 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed45.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=23 H_alpha=None rho_last=None (9.6s)
+[24/70] config=w/o_temporal seed=45 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed45.jsonl
+    acc=0.9136 macroF1=0.9140 epochs_run=29 H_alpha=None rho_last=None (12.2s)
+[25/70] config=w/o_fusion seed=45 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed45.jsonl
+    acc=0.9912 macroF1=0.9912 epochs_run=21 H_alpha=None rho_last=0.3493203558986604 (18.1s)
+[26/70] config=w/o_gating seed=45 -> results_replication_tep_atsf/diagnostics/wo_gating_seed45.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=16 H_alpha=0.3902729380329978 rho_last=3.5269658227766425 (13.9s)
+[27/70] config=full_r1 seed=45 -> results_replication_tep_atsf/diagnostics/full_r1_seed45.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=25 H_alpha=0.4108484786349926 rho_last=0.13337285772079452 (25.3s)
+[28/70] config=full_r2_gumbel seed=45 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed45.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=25 H_alpha=0.391363451118655 rho_last=0.3173837732282987 (23.7s)
+[29/70] config=full seed=46 -> results_replication_tep_atsf/diagnostics/full_seed46.jsonl
+    acc=0.9912 macroF1=0.9911 epochs_run=23 H_alpha=0.36522333793488143 rho_last=0.2803020016753558 (18.1s)
+[30/70] config=w/o_spectral seed=46 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed46.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=21 H_alpha=None rho_last=None (8.9s)
+[31/70] config=w/o_temporal seed=46 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed46.jsonl
+    acc=0.9118 macroF1=0.9128 epochs_run=18 H_alpha=None rho_last=None (7.5s)
+[32/70] config=w/o_fusion seed=46 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed46.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=23 H_alpha=None rho_last=0.8930458819561027 (18.7s)
+[33/70] config=w/o_gating seed=46 -> results_replication_tep_atsf/diagnostics/wo_gating_seed46.jsonl
+    acc=0.9877 macroF1=0.9876 epochs_run=16 H_alpha=0.3787067764186348 rho_last=0.7240408436464266 (13.6s)
+[34/70] config=full_r1 seed=46 -> results_replication_tep_atsf/diagnostics/full_r1_seed46.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=26 H_alpha=0.3642513121415619 rho_last=0.022799690111780343 (28.2s)
+[35/70] config=full_r2_gumbel seed=46 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed46.jsonl
+    acc=0.9938 macroF1=0.9939 epochs_run=25 H_alpha=0.44161332997497327 rho_last=0.4191518583728361 (24.6s)
+[36/70] config=full seed=47 -> results_replication_tep_atsf/diagnostics/full_seed47.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=19 H_alpha=0.3003917509207615 rho_last=0.4642819915820023 (16.3s)
+[37/70] config=w/o_spectral seed=47 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed47.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=25 H_alpha=None rho_last=None (10.3s)
+[38/70] config=w/o_temporal seed=47 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed47.jsonl
+    acc=0.9065 macroF1=0.8938 epochs_run=19 H_alpha=None rho_last=None (7.9s)
+[39/70] config=w/o_fusion seed=47 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed47.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=32 H_alpha=None rho_last=0.562000947900209 (25.6s)
+[40/70] config=w/o_gating seed=47 -> results_replication_tep_atsf/diagnostics/wo_gating_seed47.jsonl
+    acc=0.9965 macroF1=0.9965 epochs_run=29 H_alpha=0.36233277513519274 rho_last=2.027063093747375 (25.2s)
+[41/70] config=full_r1 seed=47 -> results_replication_tep_atsf/diagnostics/full_r1_seed47.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=23 H_alpha=0.4075693921279127 rho_last=0.0501686216754335 (21.0s)
+[42/70] config=full_r2_gumbel seed=47 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed47.jsonl
+    acc=0.9965 macroF1=0.9965 epochs_run=21 H_alpha=0.4266515575317189 rho_last=0.857259993157903 (19.8s)
+[43/70] config=full seed=48 -> results_replication_tep_atsf/diagnostics/full_seed48.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=19 H_alpha=0.32272730859188453 rho_last=0.4868618602474855 (16.0s)
+[44/70] config=w/o_spectral seed=48 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed48.jsonl
+    acc=1.0000 macroF1=1.0000 epochs_run=18 H_alpha=None rho_last=None (7.4s)
+[45/70] config=w/o_temporal seed=48 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed48.jsonl
+    acc=0.9153 macroF1=0.9130 epochs_run=29 H_alpha=None rho_last=None (11.9s)
+[46/70] config=w/o_fusion seed=48 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed48.jsonl
+    acc=0.9824 macroF1=0.9821 epochs_run=14 H_alpha=None rho_last=0.5909611738000174 (11.4s)
+[47/70] config=w/o_gating seed=48 -> results_replication_tep_atsf/diagnostics/wo_gating_seed48.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=19 H_alpha=0.3367522121303985 rho_last=0.5947687421488711 (16.1s)
+[48/70] config=full_r1 seed=48 -> results_replication_tep_atsf/diagnostics/full_r1_seed48.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=23 H_alpha=0.31066462740560474 rho_last=0.03215177367166642 (24.1s)
+[49/70] config=full_r2_gumbel seed=48 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed48.jsonl
+    acc=0.9956 macroF1=0.9956 epochs_run=26 H_alpha=0.4443463724847944 rho_last=0.6309213255331511 (24.3s)
+[50/70] config=full seed=49 -> results_replication_tep_atsf/diagnostics/full_seed49.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=22 H_alpha=0.33472069380685443 rho_last=0.5914906182775745 (20.1s)
+[51/70] config=w/o_spectral seed=49 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed49.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=19 H_alpha=None rho_last=None (8.6s)
+[52/70] config=w/o_temporal seed=49 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed49.jsonl
+    acc=0.9127 macroF1=0.9052 epochs_run=19 H_alpha=None rho_last=None (7.8s)
+[53/70] config=w/o_fusion seed=49 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed49.jsonl
+    acc=0.9903 macroF1=0.9903 epochs_run=13 H_alpha=None rho_last=0.4364152346806811 (10.2s)
+[54/70] config=w/o_gating seed=49 -> results_replication_tep_atsf/diagnostics/wo_gating_seed49.jsonl
+    acc=0.9965 macroF1=0.9965 epochs_run=24 H_alpha=0.3502614444736608 rho_last=8.413948537172978 (19.6s)
+[55/70] config=full_r1 seed=49 -> results_replication_tep_atsf/diagnostics/full_r1_seed49.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=20 H_alpha=0.39155529226728103 rho_last=0.3125070434625458 (21.0s)
+[56/70] config=full_r2_gumbel seed=49 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed49.jsonl
+    acc=0.9903 macroF1=0.9902 epochs_run=13 H_alpha=0.48341540398640287 rho_last=0.9719407831762343 (12.4s)
+[57/70] config=full seed=50 -> results_replication_tep_atsf/diagnostics/full_seed50.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=19 H_alpha=0.3917188993889177 rho_last=0.8832787159014908 (16.8s)
+[58/70] config=w/o_spectral seed=50 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed50.jsonl
+    acc=0.9982 macroF1=0.9982 epochs_run=17 H_alpha=None rho_last=None (7.1s)
+[59/70] config=w/o_temporal seed=50 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed50.jsonl
+    acc=0.9153 macroF1=0.9164 epochs_run=46 H_alpha=None rho_last=None (20.4s)
+[60/70] config=w/o_fusion seed=50 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed50.jsonl
+    acc=0.9956 macroF1=0.9956 epochs_run=26 H_alpha=None rho_last=0.5270592220596826 (21.7s)
+[61/70] config=w/o_gating seed=50 -> results_replication_tep_atsf/diagnostics/wo_gating_seed50.jsonl
+    acc=0.9877 macroF1=0.9874 epochs_run=16 H_alpha=0.5080854002722431 rho_last=0.8276344248892828 (14.4s)
+[62/70] config=full_r1 seed=50 -> results_replication_tep_atsf/diagnostics/full_r1_seed50.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=23 H_alpha=0.43204908673142006 rho_last=0.024372891882711894 (20.7s)
+[63/70] config=full_r2_gumbel seed=50 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed50.jsonl
+    acc=0.9938 macroF1=0.9938 epochs_run=21 H_alpha=0.43441922976022057 rho_last=0.5389047619670143 (19.6s)
+[64/70] config=full seed=51 -> results_replication_tep_atsf/diagnostics/full_seed51.jsonl
+    acc=0.9947 macroF1=0.9947 epochs_run=23 H_alpha=0.37685039731735404 rho_last=1.2944803503020246 (19.4s)
+[65/70] config=w/o_spectral seed=51 -> results_replication_tep_atsf/diagnostics/wo_spectral_seed51.jsonl
+    acc=0.9974 macroF1=0.9974 epochs_run=21 H_alpha=None rho_last=None (8.8s)
+[66/70] config=w/o_temporal seed=51 -> results_replication_tep_atsf/diagnostics/wo_temporal_seed51.jsonl
+    acc=0.9039 macroF1=0.9049 epochs_run=27 H_alpha=None rho_last=None (11.1s)
+[67/70] config=w/o_fusion seed=51 -> results_replication_tep_atsf/diagnostics/wo_fusion_seed51.jsonl
+    acc=0.9965 macroF1=0.9965 epochs_run=38 H_alpha=None rho_last=0.4792010644870088 (31.5s)
+[68/70] config=w/o_gating seed=51 -> results_replication_tep_atsf/diagnostics/wo_gating_seed51.jsonl
+    acc=0.9929 macroF1=0.9929 epochs_run=20 H_alpha=0.30826762096503013 rho_last=0.641621014814819 (17.6s)
+[69/70] config=full_r1 seed=51 -> results_replication_tep_atsf/diagnostics/full_r1_seed51.jsonl
+    acc=0.9991 macroF1=0.9991 epochs_run=17 H_alpha=0.4541693139620624 rho_last=0.0269663515550499 (16.2s)
+[70/70] config=full_r2_gumbel seed=51 -> results_replication_tep_atsf/diagnostics/full_r2_gumbel_seed51.jsonl
+    acc=0.9894 macroF1=0.9894 epochs_run=13 H_alpha=0.4794186178010944 rho_last=0.39796126672908544 (12.5s)
+[done] outputs written to results_replication_tep_atsf/: results_table.csv, remedy_table.csv, significance.csv, diagnostics/*.jsonl, protocol_report.json
