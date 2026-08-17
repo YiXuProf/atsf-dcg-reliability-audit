@@ -1,0 +1,5 @@
+class,within_run_split,train_runs,val_runs,test_runs,train_windows,val_windows,test_windows
+Healthy,False,288,96,96,35999,11999,12000
+OuterRing,False,575,192,192,71857,23996,23993
+InnerRing,False,528,176,176,66019,21995,21995
+BothRings,False,144,48,48,17995,5998,5999

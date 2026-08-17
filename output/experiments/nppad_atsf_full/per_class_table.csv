@@ -1,0 +1,7 @@
+class,within_run_split,train_runs,val_runs,test_runs,train_windows,val_windows,test_windows
+Normal,False,1,1,1,7,7,7
+ATWS,False,1,1,1,7,7,7
+FLB,False,1,1,1,7,7,7
+LACP,False,1,1,1,7,7,7
+LLB,False,1,1,1,7,7,7
+LOCA,False,1,1,1,7,7,7

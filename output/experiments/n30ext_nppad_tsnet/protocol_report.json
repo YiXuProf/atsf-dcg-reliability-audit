@@ -1,0 +1,225 @@
+{
+  "data_source": "/mnt/workspace/data/NuclearPowerPlantAccidentData/Operation_csv_data",
+  "dataset": "nppad",
+  "arch": "tsnet",
+  "cell": "replication",
+  "split_unit": "run",
+  "smoke": false,
+  "seeds": [
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71
+  ],
+  "epochs": 100,
+  "configs": [
+    "full",
+    "w/o_spectral",
+    "w/o_gating",
+    "full_r2_gumbel"
+  ],
+  "dataset_report": {
+    "window": 128,
+    "stride": 64,
+    "split_seed": 42,
+    "n_runs": 1199,
+    "n_channels": 96,
+    "per_class": {
+      "Normal": {
+        "train_runs": 1,
+        "val_runs": 0,
+        "test_runs": 1,
+        "train_windows": 2,
+        "val_windows": 0,
+        "test_windows": 1
+      },
+      "ATWS": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 7,
+        "val_windows": 1,
+        "test_windows": 1
+      },
+      "FLB": {
+        "train_runs": 70,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 143,
+        "val_windows": 27,
+        "test_windows": 27
+      },
+      "LACP": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 4,
+        "val_windows": 1,
+        "test_windows": 1
+      },
+      "LLB": {
+        "train_runs": 71,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 497,
+        "val_windows": 105,
+        "test_windows": 105
+      },
+      "LOCA": {
+        "train_runs": 70,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 319,
+        "val_windows": 69,
+        "test_windows": 73
+      },
+      "LOCAC": {
+        "train_runs": 70,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 383,
+        "val_windows": 83,
+        "test_windows": 81
+      },
+      "LOF": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 5,
+        "val_windows": 1,
+        "test_windows": 1
+      },
+      "LR": {
+        "train_runs": 69,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 483,
+        "val_windows": 105,
+        "test_windows": 105
+      },
+      "MD": {
+        "train_runs": 70,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 518,
+        "val_windows": 113,
+        "test_windows": 113
+      },
+      "RI": {
+        "train_runs": 58,
+        "val_runs": 12,
+        "test_runs": 12,
+        "train_windows": 114,
+        "val_windows": 28,
+        "test_windows": 28
+      },
+      "RW": {
+        "train_runs": 70,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 94,
+        "val_windows": 20,
+        "test_windows": 16
+      },
+      "SGATR": {
+        "train_runs": 70,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 391,
+        "val_windows": 86,
+        "test_windows": 85
+      },
+      "SGBTR": {
+        "train_runs": 76,
+        "val_runs": 17,
+        "test_runs": 17,
+        "train_windows": 424,
+        "val_windows": 99,
+        "test_windows": 100
+      },
+      "SLBIC": {
+        "train_runs": 71,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 231,
+        "val_windows": 46,
+        "test_windows": 42
+      },
+      "SLBOC": {
+        "train_runs": 70,
+        "val_runs": 15,
+        "test_runs": 15,
+        "train_windows": 403,
+        "val_windows": 91,
+        "test_windows": 88
+      },
+      "SP": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 5,
+        "val_windows": 1,
+        "test_windows": 1
+      },
+      "TT": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 11,
+        "val_windows": 1,
+        "test_windows": 1
+      }
+    },
+    "within_run_split_classes": [
+      "Normal",
+      "ATWS",
+      "LACP",
+      "LOF",
+      "SP",
+      "TT"
+    ],
+    "warnings": [
+      "run 'RI/-100.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-83.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-84.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-85.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-86.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-87.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-88.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-89.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-90.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-91.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-92.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-93.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-94.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-95.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-96.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-97.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-98.csv' has 11 timesteps < window=128; skipped",
+      "run 'RI/-99.csv' has 11 timesteps < window=128; skipped",
+      "class 'Normal' has only 1 run (302 timesteps); split within-run by time (train=174/test=128 timesteps (fixed test tail, no val)), disjoint segments windowed with stride=32 (documented protocol exception)",
+      "class 'ATWS' has only 1 run (580 timesteps); split within-run by time (train=324/val=128/test=128 timesteps (fixed tails)), disjoint segments windowed with stride=32 (documented protocol exception)",
+      "class 'LACP' has only 1 run (504 timesteps); split within-run by time (train=248/val=128/test=128 timesteps (fixed tails)), disjoint segments windowed with stride=32 (documented protocol exception)",
+      "class 'LOF' has only 1 run (512 timesteps); split within-run by time (train=256/val=128/test=128 timesteps (fixed tails)), disjoint segments windowed with stride=32 (documented protocol exception)",
+      "class 'SP' has only 1 run (515 timesteps); split within-run by time (train=259/val=128/test=128 timesteps (fixed tails)), disjoint segments windowed with stride=32 (documented protocol exception)",
+      "class 'TT' has only 1 run (721 timesteps); split within-run by time (train=465/val=128/test=128 timesteps (fixed tails)), disjoint segments windowed with stride=32 (documented protocol exception)"
+    ],
+    "root": "/mnt/workspace/data/NuclearPowerPlantAccidentData/Operation_csv_data"
+  }
+}

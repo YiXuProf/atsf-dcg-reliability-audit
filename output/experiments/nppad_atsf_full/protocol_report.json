@@ -1,0 +1,86 @@
+{
+  "data_source": "/mnt/workspace/data/NuclearPowerPlantAccidentData/Operation_csv_data",
+  "dataset": "nppad",
+  "arch": "atsf",
+  "cell": "full",
+  "split_unit": "run",
+  "smoke": false,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "epochs": 100,
+  "configs": [
+    "full",
+    "full_r2",
+    "full_r4_lstm"
+  ],
+  "dataset_report": {
+    "window": 128,
+    "stride": 64,
+    "split_seed": 0,
+    "n_runs": 18,
+    "n_channels": 16,
+    "per_class": {
+      "Normal": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 7,
+        "val_windows": 7,
+        "test_windows": 7
+      },
+      "ATWS": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 7,
+        "val_windows": 7,
+        "test_windows": 7
+      },
+      "FLB": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 7,
+        "val_windows": 7,
+        "test_windows": 7
+      },
+      "LACP": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 7,
+        "val_windows": 7,
+        "test_windows": 7
+      },
+      "LLB": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 7,
+        "val_windows": 7,
+        "test_windows": 7
+      },
+      "LOCA": {
+        "train_runs": 1,
+        "val_runs": 1,
+        "test_runs": 1,
+        "train_windows": 7,
+        "val_windows": 7,
+        "test_windows": 7
+      }
+    },
+    "within_run_split_classes": [],
+    "warnings": []
+  },
+  "merged_from_diagnostics": true
+}
