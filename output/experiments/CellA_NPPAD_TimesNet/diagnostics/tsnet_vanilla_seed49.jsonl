@@ -1,0 +1,26 @@
+{"epoch": 0, "train_loss": 1.1025740519926934, "val_acc": 0.6488027366020525, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 1, "train_loss": 0.5155965058473768, "val_acc": 0.7719498289623717, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 2, "train_loss": 0.44720616633784493, "val_acc": 0.6750285062713797, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 3, "train_loss": 0.40837332501409074, "val_acc": 0.7616875712656784, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 4, "train_loss": 0.41850283634089336, "val_acc": 0.6476624857468644, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 5, "train_loss": 0.4108979112450652, "val_acc": 0.6761687571265679, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 6, "train_loss": 0.3908763857365364, "val_acc": 0.7890535917901939, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 7, "train_loss": 0.38963859915792437, "val_acc": 0.7639680729760547, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 8, "train_loss": 0.40280036980643624, "val_acc": 0.7856328392246295, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 9, "train_loss": 0.3669531965350301, "val_acc": 0.7799315849486887, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 10, "train_loss": 0.3952641725008241, "val_acc": 0.7856328392246295, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 11, "train_loss": 0.3695067383300921, "val_acc": 0.7810718358038768, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 12, "train_loss": 0.3686922349490089, "val_acc": 0.7958950969213227, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 13, "train_loss": 0.38341230795297165, "val_acc": 0.790193842645382, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 14, "train_loss": 0.3710663732940984, "val_acc": 0.7993158494868872, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 15, "train_loss": 0.34894173152386465, "val_acc": 0.7765108323831242, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 16, "train_loss": 0.37199345767409364, "val_acc": 0.6624857468643102, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 17, "train_loss": 0.38312883885650273, "val_acc": 0.7787913340935005, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 18, "train_loss": 0.3862195253726806, "val_acc": 0.7913340935005702, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 19, "train_loss": 0.39964974236831136, "val_acc": 0.774230330672748, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 20, "train_loss": 0.43439730701909895, "val_acc": 0.7833523375142531, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 21, "train_loss": 0.36399147849775626, "val_acc": 0.7457240592930444, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 22, "train_loss": 0.359358443118111, "val_acc": 0.7069555302166477, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 23, "train_loss": 0.3645602362428967, "val_acc": 0.6636259977194983, "rho": null, "h_alpha": null, "s_tau": null}
+{"epoch": 24, "train_loss": 0.358733161818467, "val_acc": 0.7913340935005702, "rho": null, "h_alpha": null, "s_tau": null}
+{"final": {"accuracy": 0.7871116225546605, "macro_f1": 0.6821802623543471, "epochs_run": 25, "rho_last": null, "H_alpha": null, "alpha_tvar": null, "S_tau": null, "per_class_alpha": null, "perm_null": null, "degradation": {"gaussian_noise_snr20": 0.7882623705408516, "gaussian_noise_snr10": 0.7894131185270425, "drift": 0.7859608745684695, "bias": 0.7203682393555811, "stuck": 0.7848101265822784, "dropout": 0.759493670886076, "downsample": 0.7871116225546605}}}
