@@ -1,0 +1,29 @@
+{
+  "config": "full",
+  "seed": 42,
+  "data_source": "C:\\迅雷云盘\\main\\NuclearPowerPlantAccidentData-main",
+  "synthetic_params": null,
+  "split": "train",
+  "test_accuracy": 0.8145761031234506,
+  "test_macro_f1": 0.7156520757188243,
+  "train_one_accuracy": 0.7848101265822784,
+  "train_one_macro_f1": 0.6475576016485527,
+  "n_windows": 4034,
+  "n_test_windows": 4034,
+  "window": 128,
+  "stride": 64,
+  "protocol": "run-level leakage-free split (split unit = simulation run; z-score statistics from training runs only)",
+  "alpha_shape": [
+    4034,
+    64
+  ],
+  "gates_shape": [
+    4034,
+    128,
+    64
+  ],
+  "z_shape": [
+    4034,
+    128
+  ]
+}
