@@ -1,0 +1,196 @@
+{
+  "data_source": "tep:/mnt/workspace/TEP",
+  "dataset": "tep",
+  "arch": "atsf",
+  "cell": "replication",
+  "smoke": false,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "epochs": 100,
+  "configs": [
+    "full",
+    "w/o_spectral",
+    "w/o_temporal",
+    "w/o_fusion",
+    "w/o_gating"
+  ],
+  "dataset_report": {
+    "window": 128,
+    "stride": 128,
+    "split_seed": 42,
+    "n_runs": 2520,
+    "n_channels": 52,
+    "per_class": {
+      "Normal": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F1": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F2": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F4": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F5": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F6": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F7": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F8": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F10": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F11": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F12": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F13": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F14": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F16": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F17": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F18": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F19": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      },
+      "F20": {
+        "train_runs": 98,
+        "val_runs": 21,
+        "test_runs": 21,
+        "train_windows": 294,
+        "val_windows": 63,
+        "test_windows": 63
+      }
+    },
+    "within_run_split_classes": [],
+    "warnings": [],
+    "dataset": "TEP",
+    "root": "/mnt/workspace/TEP",
+    "onset": 21,
+    "runs_per_class": [
+      98,
+      21,
+      21
+    ],
+    "runs_selected_per_class": 140,
+    "files": [
+      "TEP_FaultFree_Training.RData",
+      "TEP_Faulty_Training.RData"
+    ]
+  },
+  "merged_from_diagnostics": true
+}

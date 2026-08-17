@@ -1,0 +1,27 @@
+{"epoch": 0, "train_loss": 1.366406934737078, "val_acc": 0.7918871252204586, "rho": null, "h_alpha": null, "s_tau": 0.027655601501464844}
+{"epoch": 1, "train_loss": 0.4070649410141118, "val_acc": 0.8536155202821869, "rho": null, "h_alpha": null, "s_tau": 0.03635597229003906}
+{"epoch": 2, "train_loss": 0.3076816328708998, "val_acc": 0.873015873015873, "rho": null, "h_alpha": null, "s_tau": 0.03481292724609375}
+{"epoch": 3, "train_loss": 0.259948479345326, "val_acc": 0.8747795414462081, "rho": null, "h_alpha": null, "s_tau": 0.03996706008911133}
+{"epoch": 4, "train_loss": 0.224432918366301, "val_acc": 0.8835978835978836, "rho": null, "h_alpha": null, "s_tau": 0.021100997924804688}
+{"epoch": 5, "train_loss": 0.21523534575827807, "val_acc": 0.8827160493827161, "rho": null, "h_alpha": null, "s_tau": 0.04061555862426758}
+{"epoch": 6, "train_loss": 0.19057924322395367, "val_acc": 0.8977072310405644, "rho": null, "h_alpha": null, "s_tau": 0.038290977478027344}
+{"epoch": 7, "train_loss": 0.17671317587453853, "val_acc": 0.8994708994708994, "rho": null, "h_alpha": null, "s_tau": 0.036226749420166016}
+{"epoch": 8, "train_loss": 0.1767576566854392, "val_acc": 0.8932980599647267, "rho": null, "h_alpha": null, "s_tau": 0.02748394012451172}
+{"epoch": 9, "train_loss": 0.16021852397999795, "val_acc": 0.892416225749559, "rho": null, "h_alpha": null, "s_tau": 0.038763999938964844}
+{"epoch": 10, "train_loss": 0.15102981348562133, "val_acc": 0.8862433862433863, "rho": null, "h_alpha": null, "s_tau": 0.02453756332397461}
+{"epoch": 11, "train_loss": 0.1521469416802162, "val_acc": 0.8880070546737213, "rho": null, "h_alpha": null, "s_tau": 0.030725955963134766}
+{"epoch": 12, "train_loss": 0.183565297297069, "val_acc": 0.8941798941798942, "rho": null, "h_alpha": null, "s_tau": 0.042414188385009766}
+{"epoch": 13, "train_loss": 0.13961229776894604, "val_acc": 0.8932980599647267, "rho": null, "h_alpha": null, "s_tau": 0.03577899932861328}
+{"epoch": 14, "train_loss": 0.1208466019703868, "val_acc": 0.892416225749559, "rho": null, "h_alpha": null, "s_tau": 0.03832674026489258}
+{"epoch": 15, "train_loss": 0.1030849169824309, "val_acc": 0.9056437389770723, "rho": null, "h_alpha": null, "s_tau": 0.03464555740356445}
+{"epoch": 16, "train_loss": 0.10515074782180497, "val_acc": 0.8791887125220459, "rho": null, "h_alpha": null, "s_tau": 0.044571876525878906}
+{"epoch": 17, "train_loss": 0.10002803207232208, "val_acc": 0.8932980599647267, "rho": null, "h_alpha": null, "s_tau": 0.04748249053955078}
+{"epoch": 18, "train_loss": 0.09129110781739178, "val_acc": 0.8738977072310405, "rho": null, "h_alpha": null, "s_tau": 0.04885673522949219}
+{"epoch": 19, "train_loss": 0.09335941381228754, "val_acc": 0.8994708994708994, "rho": null, "h_alpha": null, "s_tau": 0.03602313995361328}
+{"epoch": 20, "train_loss": 0.06811384456013966, "val_acc": 0.8977072310405644, "rho": null, "h_alpha": null, "s_tau": 0.03470802307128906}
+{"epoch": 21, "train_loss": 0.06207587755231, "val_acc": 0.8994708994708994, "rho": null, "h_alpha": null, "s_tau": 0.05324840545654297}
+{"epoch": 22, "train_loss": 0.1145732737092114, "val_acc": 0.8641975308641975, "rho": null, "h_alpha": null, "s_tau": 0.034789085388183594}
+{"epoch": 23, "train_loss": 0.1002259591491562, "val_acc": 0.8977072310405644, "rho": null, "h_alpha": null, "s_tau": 0.0498046875}
+{"epoch": 24, "train_loss": 0.0584600805808267, "val_acc": 0.8959435626102292, "rho": null, "h_alpha": null, "s_tau": 0.04152870178222656}
+{"epoch": 25, "train_loss": 0.04819234666285736, "val_acc": 0.9029982363315696, "rho": null, "h_alpha": null, "s_tau": 0.04871177673339844}
+{"final": {"accuracy": 0.9074074074074074, "macro_f1": 0.9097129952108253, "epochs_run": 26, "rho_last": null, "H_alpha": null, "alpha_tvar": null, "S_tau": 0.05308777466416359, "per_class_alpha": null, "perm_null": null, "degradation": {"gaussian_noise_snr20": 0.9021164021164021, "gaussian_noise_snr10": 0.7354497354497355, "drift": 0.8165784832451499, "bias": 0.9074074074074074, "stuck": 0.826278659611993, "dropout": 0.908289241622575, "downsample": 0.8941798941798942}}}
