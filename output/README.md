@@ -31,22 +31,20 @@ output/
 
 | folder | file | content |
 |---|---|---|
-| `fusion/` | `fig1_rho_trajectories` | ρ training trajectories (manuscript Fig. 2) |
-| | `fig2_fusion_weight_dist` | fusion-weight distribution (Fig. 3) |
-| | `fig3_fusion_weight_by_class` | per-class fusion weights (Fig. 4) |
-| | `fig4_gate_heatmap` | gate heatmap (Fig. 5) |
-| | `fig5_tsne` | feature t-SNE (Fig. 6) |
-| | `fig6_confusion_matrix` | confusion matrix (Fig. 7) |
-| `diagnostics_panels/` | `fig6_diagnostics` / `fig7_diagnostics` | diagnostic four-panel (Fig. 8) |
-| `five_cell/` | `fig7_degradation_heatmap` | sensor degradation (Fig. 13) |
-| | `fig8_early_indicator_trajectories` | early-stop indicators (Fig. 10) |
-| | `fig9_ablation_forest` | five-cell ablation (Fig. 9) |
-| | `fig10_regime_map` | failure regime map (Fig. 11) |
+| `architecture/` | `fig01_architecture_audit_map` | Fig. 1 (`make_fig01_architecture_audit_map.py`) |
+| | `fig12_decision_workflow` | Fig. 12 (`make_fig12_decision_workflow.py`) |
+| `fusion/` | `fig02_rho_trajectories` | Fig. 2 (`make_fig02_rho_trajectories.py`) |
+| | `fig03_fusion_weight_dist` … `fig07_confusion_matrix` | Figs. 3–7 (`make_fig03_07_runlevel.py`) |
+| `diagnostics_panels/` | `fig08_diagnostics` | Fig. 8 (`make_fig08_diagnostics.py`) |
+| `five_cell/` | `fig09_ablation_forest` | Fig. 9 (`make_fig09.py`) |
+| | `fig10_early_indicator_trajectories` | Fig. 10 (`make_fig10.py`) |
+| | `fig11_regime_map` | Fig. 11 (`make_fig11.py`) |
+| | `fig13_degradation_heatmap` | Fig. 13 (`make_fig13.py`) |
 
 Architecture / D1–D5 workflow figures:
 
 ```bash
-python scripts/make_fig0_architecture_audit_map.py
+python scripts/make_fig01_architecture_audit_map.py
 python scripts/make_fig12_decision_workflow.py
 ```
 
@@ -59,13 +57,17 @@ They write to `figures/architecture/`.
 - `per_seed_finals/`: `finals_*.csv`, `per_seed_raw.csv`
 - `reviewer_controls/`: `custom_paired.csv`, `custom_paired_eps1pp.csv`, `custom_tost.csv`
 
-To regenerate v7 figures:
+To regenerate five-cell figures (Fig. 9 / 10 / 11 / 13):
 
 ```bash
-python scripts/make_figs_v7.py
+python scripts/make_fig09.py
+python scripts/make_fig10.py
+python scripts/make_fig11.py
+python scripts/make_fig13.py
+# or: python scripts/five_cell_figs.py
 ```
 
-defaults: `--csvdir output/tables`, `--out output/figures/five_cell`.
+defaults: `--csvdir output/tables`, `--out output/figures/five_cell` (via `five_cell_figs.py`).
 
 ## experiments
 
