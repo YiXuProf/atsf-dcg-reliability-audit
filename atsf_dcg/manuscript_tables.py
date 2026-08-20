@@ -458,8 +458,8 @@ def emit(sid: str, *, paper: Path | None = None,
         review = TABLES_ROOT / "reviewer_controls"
         _copy(review / "custom_paired.csv", paper / "Table_V_reviewer_controls.csv")
         _copy(review / "custom_tost.csv", paper / "Table_V_tost.csv")
-        _copy(review / "custom_paired_eps1pp.csv",
-              paper / "Table_V_tost_1pp.csv")
+        # ±1pp TOST (same schema as custom_tost.csv); NOT custom_paired_eps1pp.csv
+        _copy(review / "custom_tost_eps1pp.csv", paper / "Table_V_tost_1pp.csv")
         return
     if sid == "VI":
         write_table_vi(paper)
