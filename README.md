@@ -1,6 +1,6 @@
 # ATSF-DCG
 
-Companion code for the RESS manuscript _Screening Silent Component Failures in Data-Driven Nuclear Power Plant Transient Diagnosis before Deployment: A Five-Cell Reliability Audit_.
+Companion code for the manuscript _Screening Silent Component Failures in Data-Driven Nuclear Power Plant Transient Diagnosis before Deployment: A Five-Cell Reliability Audit_.
 
 This repository contains the model and experiment code, already-run paper artifacts (`output/`), and `main.py` to re-export **Fig. 1–13** and **Table I–VI / S1–S15** (including S8a). The three public datasets are **not** redistributed (copyright / licence). Download them into `data/` as described below.
 
@@ -376,6 +376,6 @@ The code locates `data/` and `output/` from the repository root; you usually do 
 
 **Citation** (manuscript under review):
 
-> Yi Xu. *Screening Silent Component Failures in Data-Driven Nuclear Power Plant Transient Diagnosis before Deployment: A Five-Cell Reliability Audit across Two Simulation Benchmarks and Measured Bearing Data.* (under review)
+> Yi Xu. _Screening Silent Component Failures in Data-Driven Nuclear Power Plant Transient Diagnosis before Deployment: A Five-Cell Reliability Audit across Two Simulation Benchmarks and Measured Bearing Data._ (under review)
 
 **Contact:** Yi Xu — [Yi.Xu.Prof@outlook.com](mailto:Yi.Xu.Prof@outlook.com) · ORCID [0009-0002-3789-8136](https://orcid.org/0009-0002-3789-8136)
