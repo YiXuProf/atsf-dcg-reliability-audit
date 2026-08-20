@@ -102,7 +102,13 @@ TABLE_INFO = {
 
 _SKIP_TABLES = {"VII"}
 
-_FIG_V7_ONLY = {"9": "9", "10": "8", "11": "10", "13": "7"}
+# Manuscript Fig. ids → dedicated make_figXX.py + paper stem
+_FIG_FIVE_CELL = {
+    "9": ("make_fig09.py", "fig09_ablation_forest"),
+    "10": ("make_fig10.py", "fig10_early_indicator_trajectories"),
+    "11": ("make_fig11.py", "fig11_regime_map"),
+    "13": ("make_fig13.py", "fig13_degradation_heatmap"),
+}
 
 _DUMP_DIR = INTERMEDIATE_ROOT / "eval_dump" / "full_seed42"
 _NPPAD_FULL = EXPERIMENTS_ROOT / "nppad_atsf_full"
@@ -239,25 +245,21 @@ def _banner(msg: str) -> None:
 # ---------------------------------------------------------------------------
 
 def _fig_1() -> None:
-    _run("make_fig0_architecture_audit_map.py")
-    _copy_pair(
-        FIGURES_ROOT / "architecture" / "fig0_architecture_audit_map",
-        PAPER_FIG_DIR / "fig01_architecture_audit_map",
-    )
+    _run("make_fig01_architecture_audit_map.py")
+    stem = "fig01_architecture_audit_map"
+    _copy_pair(FIGURES_ROOT / "architecture" / stem, PAPER_FIG_DIR / stem)
 
 
 def _fig_2() -> None:
     rho = _NPPAD_FULL / "rho_curve.csv"
     if not rho.is_file():
         raise FileNotFoundError(f"{rho} not found (run the NPPAD full grid first)")
-    dest = PAPER_FIG_DIR / "fig02_rho_trajectories.png"
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    _run("make_fig1_rho.py",
+    inter = FIGURES_ROOT / "fusion" / "fig02_rho_trajectories.png"
+    inter.parent.mkdir(parents=True, exist_ok=True)
+    _run("make_fig02_rho_trajectories.py",
          "--results-dir", str(_NPPAD_FULL),
-         "--out", str(dest))
-    svg = dest.with_suffix(".svg")
-    if svg.is_file():
-        print(f"  paper <- {svg.relative_to(REPO)}", flush=True)
+         "--out", str(inter))
+    _copy_pair(inter.with_suffix(""), PAPER_FIG_DIR / "fig02_rho_trajectories")
 
 
 def _fig_3_to_7() -> None:
@@ -269,18 +271,17 @@ def _fig_3_to_7() -> None:
     nppad = nppad_root()
     if nppad.exists():
         flags.extend(["--data-root", str(nppad)])
-    _run("make_fig_runlevel.py", *flags)
-    mapping = {
-        "fig2_fusion_weight_dist": "fig03_fusion_weight_dist",
-        "fig3_fusion_weight_by_class": "fig04_fusion_weight_by_class",
-        "fig4_gate_heatmap": "fig05_gate_heatmap",
-        "fig5_tsne": "fig06_tsne",
-        "fig6_confusion_matrix": "fig07_confusion_matrix",
-    }
-    fusion = FIGURES_ROOT / "fusion"
-    for src, dst in mapping.items():
+    _run("make_fig03_07_runlevel.py", *flags)
+    # Intermediate stems already match paper/
+    for stem in (
+        "fig03_fusion_weight_dist",
+        "fig04_fusion_weight_by_class",
+        "fig05_gate_heatmap",
+        "fig06_tsne",
+        "fig07_confusion_matrix",
+    ):
         try:
-            _copy_pair(fusion / src, PAPER_FIG_DIR / dst)
+            _copy_pair(FIGURES_ROOT / "fusion" / stem, PAPER_FIG_DIR / stem)
         except FileNotFoundError as exc:
             print(f"  [skip] {exc}", flush=True)
 
@@ -288,37 +289,24 @@ def _fig_3_to_7() -> None:
 def _fig_8() -> None:
     if not (_NPPAD_FULL / "results_table.csv").is_file():
         raise FileNotFoundError(f"{_NPPAD_FULL / 'results_table.csv'} not found")
-    dest = PAPER_FIG_DIR / "fig08_diagnostics.png"
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    _run("make_fig6.py",
+    inter = FIGURES_ROOT / "diagnostics_panels" / "fig08_diagnostics.png"
+    inter.parent.mkdir(parents=True, exist_ok=True)
+    _run("make_fig08_diagnostics.py",
          "--results-dir", str(_NPPAD_FULL),
-         "--out", str(dest))
+         "--out", str(inter))
+    _copy_pair(inter.with_suffix(""), PAPER_FIG_DIR / "fig08_diagnostics")
 
 
-def _fig_v7(paper_id: str) -> None:
-    only = _FIG_V7_ONLY[paper_id]
-    _run("make_figs_v7.py", "--only", only)
-    src_name = {
-        "9": "fig9_ablation_forest",
-        "10": "fig8_early_indicator_trajectories",
-        "11": "fig10_regime_map",
-        "13": "fig7_degradation_heatmap",
-    }[paper_id]
-    dst_name = {
-        "9": "fig09_ablation_forest",
-        "10": "fig10_early_indicator_trajectories",
-        "11": "fig11_regime_map",
-        "13": "fig13_degradation_heatmap",
-    }[paper_id]
-    _copy_pair(FIGURES_ROOT / "five_cell" / src_name, PAPER_FIG_DIR / dst_name)
+def _fig_five_cell(paper_id: str) -> None:
+    script, stem = _FIG_FIVE_CELL[paper_id]
+    _run(script)
+    _copy_pair(FIGURES_ROOT / "five_cell" / stem, PAPER_FIG_DIR / stem)
 
 
 def _fig_12() -> None:
     _run("make_fig12_decision_workflow.py")
-    _copy_pair(
-        FIGURES_ROOT / "architecture" / "fig12_decision_workflow",
-        PAPER_FIG_DIR / "fig12_decision_workflow",
-    )
+    stem = "fig12_decision_workflow"
+    _copy_pair(FIGURES_ROOT / "architecture" / stem, PAPER_FIG_DIR / stem)
 
 
 def emit_figures(ids: list[str]) -> None:
@@ -338,8 +326,8 @@ def emit_figures(ids: list[str]) -> None:
                     done_runlevel = True
             elif i == "8":
                 _fig_8()
-            elif i in _FIG_V7_ONLY:
-                _fig_v7(i)
+            elif i in _FIG_FIVE_CELL:
+                _fig_five_cell(i)
             elif i == "12":
                 _fig_12()
             else:

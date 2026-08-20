@@ -217,7 +217,7 @@ python main.py all --no-refresh   # copy/plot only; do not rebuild summary CSVs
 | Table S8a, S8–S11 | Per-seed Acc / F1 (%) for Cells O / A / B / C / D                  | `output/tables/per_seed_finals/per_seed_raw.csv`                                 |
 | Tables S12–S15    | Full-model per-seed ρ / H(α) / Var_t(α) / perm-null z              | same                                                                             |
 
-Fig. 3–7 share one run of `make_fig_runlevel.py`. Without NPPAD locally, Fig. 6 still draws the feature t-SNE and skips the raw-waveform panel.
+Fig. 3–7 share one run of `make_fig03_07_runlevel.py`. Without NPPAD locally, Fig. 6 still draws the feature t-SNE and skips the raw-waveform panel.
 
 ---
 
