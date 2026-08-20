@@ -53,8 +53,10 @@ def block(x, y, w, h, lines, fc=C_BOX, ec=C_BOX_E, fs=12.5, sfs=11.5):
                 color=C_TEXT, style="italic")
 
 def diamond(cx, cy, w, h, lines, fc="#fdf3e6", ec="#c9a25e"):
-    ax.add_patch(Polygon([(cx - w / 2, cy), (cx, cy + h / 2), (cx, cy - h / 2), (cx + w / 2, cy)],
-                         closed=True, fc=fc, ec=ec, lw=1.6))
+    # Vertices must be cyclic (L→T→R→B). L→T→B→R self-intersects into a bowtie.
+    ax.add_patch(Polygon(
+        [(cx - w / 2, cy), (cx, cy + h / 2), (cx + w / 2, cy), (cx, cy - h / 2)],
+        closed=True, fc=fc, ec=ec, lw=1.6))
     ax.text(cx, cy + h * 0.16, lines[0], ha="center", va="center", fontsize=11.5,
             fontweight="bold", color=C_TEXT)
     ax.text(cx, cy - h * 0.20, lines[1], ha="center", va="center", fontsize=10.5,
