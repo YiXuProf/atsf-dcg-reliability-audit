@@ -13,12 +13,11 @@ Planned contrasts
     B2  full_fixed_class  vs full            (acc, F1)
     B3  full_fixed_class  vs full_fixed_global (acc)  (class-diff value)
     B4  full_fixed_global vs w/o_fusion      (acc)  (own mean vs uniform 0.5)
-  TOST equivalence tests (bound eps, default 0.5 pp):
+  TOST equivalence tests (same three pairs at ±0.5 pp and ±1.0 pp):
     full_fixed_global vs full, w/o_fusion vs full, full_r1 vs full
 
 Usage (from the repository root)::
     python scripts/diagnose_controls.py
-    python scripts/diagnose_controls.py --eps 0.005
 """
 
 from __future__ import annotations
@@ -165,8 +164,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--diag-dir",
                     default=str(EXPERIMENTS_ROOT / "nppad_atsf_full" / "diagnostics"))
-    ap.add_argument("--eps", type=float, default=0.005,
-                    help="TOST equivalence bound in accuracy units (default 0.005 = 0.5pp)")
+    ap.add_argument("--eps", type=float, default=None,
+                    help="deprecated: both ±0.5pp and ±1.0pp TOST are always written")
     ap.add_argument("--out",
                     default=str(TABLES_ROOT / "reviewer_controls" / "custom_paired.csv"))
     args = ap.parse_args()
@@ -204,27 +203,38 @@ def main() -> None:
             df.loc[sub.index, "holm_p_w"] = holm(
                 [p if np.isfinite(p) else 1.0 for p in sub["wilcoxon_p"]])
 
-    print("\n[tost] equivalence tests (eps = {:.1f} pp)".format(args.eps * 100))
-    tost_rows = []
-    for cfg_a, cfg_b in TOST_PAIRS:
-        if cfg_a not in data or cfg_b not in data:
-            continue
-        seeds = sorted(set(data[cfg_a]) & set(data[cfg_b]))
-        a = np.array([data[cfg_a][s]["accuracy"] for s in seeds])
-        b = np.array([data[cfg_b][s]["accuracy"] for s in seeds])
-        r = tost(a, b, args.eps)
-        tost_rows.append({"a": cfg_a, "b": cfg_b, **r})
-        verdict = ("EQUIVALENT within eps" if r["equivalent_at_eps"]
-                   else "NOT shown equivalent (inconclusive)")
-        print(f"  {cfg_a:18s} vs {cfg_b:18s} diff={r['mean_diff']*100:+.2f}pp "
-              f"tost_p={r['tost_p']:.4f} -> {verdict}")
+    # Always emit both manuscript TOST bounds (do not overwrite one with the other).
+    tost_specs = ((0.005, "custom_tost.csv"),
+                  (0.010, "custom_tost_eps1pp.csv"))
+    if args.eps is not None:
+        # keep a one-shot print for the requested eps, still write both files
+        print(f"\n[tost] note: --eps={args.eps} ignored for file naming; "
+              "writing both ±0.5pp and ±1.0pp", flush=True)
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
-    pd.DataFrame(tost_rows).to_csv(out.with_name("custom_tost.csv"), index=False)
-    print(f"\n[done] wrote {out} and {out.with_name('custom_tost.csv')}")
+    written = [out]
+    for eps, tost_name in tost_specs:
+        print(f"\n[tost] equivalence tests (eps = {eps * 100:.1f} pp)")
+        tost_rows = []
+        for cfg_a, cfg_b in TOST_PAIRS:
+            if cfg_a not in data or cfg_b not in data:
+                continue
+            seeds = sorted(set(data[cfg_a]) & set(data[cfg_b]))
+            a = np.array([data[cfg_a][s]["accuracy"] for s in seeds])
+            b = np.array([data[cfg_b][s]["accuracy"] for s in seeds])
+            r = tost(a, b, eps)
+            tost_rows.append({"a": cfg_a, "b": cfg_b, **r})
+            verdict = ("EQUIVALENT within eps" if r["equivalent_at_eps"]
+                       else "NOT shown equivalent (inconclusive)")
+            print(f"  {cfg_a:18s} vs {cfg_b:18s} diff={r['mean_diff']*100:+.2f}pp "
+                  f"tost_p={r['tost_p']:.4f} -> {verdict}")
+        tost_path = out.with_name(tost_name)
+        pd.DataFrame(tost_rows).to_csv(tost_path, index=False)
+        written.append(tost_path)
 
+    print("\n[done] wrote " + ", ".join(str(p) for p in written))
 
 if __name__ == "__main__":
     main()
