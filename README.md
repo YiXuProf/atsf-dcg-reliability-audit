@@ -12,7 +12,7 @@ This repository contains the model and experiment code, already-run paper artifa
 Figure generators are named by **manuscript number** (`scripts/make_fig01_…` … `make_fig13.py`). Their outputs use the **same stems** as `output/paper/figures/` (e.g. `fig10_early_indicator_trajectories`).
 
 ```
-code/
+.
 ├── atsf_dcg/          # installable core library (model, loaders, training, CLI)
 ├── scripts/           # make_figXX.py, table export, Paderborn download, n30 merge
 ├── tests/             # synthetic smoke tests (not paper numbers)
@@ -31,10 +31,11 @@ code/
 
 - Python **3.10+**
 - Paper-scale training: **NVIDIA GPU** + CUDA PyTorch. CPU is enough to redraw existing figures and tables.
-- Windows / Linux / macOS. Run the commands below from the repository root `code/`.
+- Windows / Linux / macOS. Run all commands from the **repository root** (the folder that contains `main.py`).
 
 ```bash
-cd code01
+git clone https://github.com/YiXuProf/atsf-dcg-reliability-audit.git
+cd atsf-dcg-reliability-audit
 python -m venv .venv
 
 # Linux / macOS
