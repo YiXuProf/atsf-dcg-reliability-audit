@@ -2,7 +2,7 @@
 
 Companion code for the manuscript:
 
-> Yi Xu. _Screening Silent Component Failures in Data-Driven Nuclear Power Plant Transient Diagnosis: A Five-Cell Reliability Audit._ (under review)
+> Yi Xu. _Silent Failures of Adaptive Mechanisms in Data-Driven Nuclear Power Plant Transient Diagnosis: A Component-Level Reliability Audit Across Simulated and Measured Data._ (under review)
 
 **Author:** Yi Xu — School of Information Engineering, Hunan Industry Polytechnic, Changsha, Hunan 410208, China  
 **Email:** [Yi.Xu.Prof@outlook.com](mailto:Yi.Xu.Prof@outlook.com) · **ORCID:** [0009-0002-3789-8136](https://orcid.org/0009-0002-3789-8136)
@@ -437,6 +437,6 @@ The code locates `data/` and `output/` from the repository root; you usually do 
 
 **Citation** (manuscript under review):
 
-> Yi Xu. _Screening Silent Component Failures in Data-Driven Nuclear Power Plant Transient Diagnosis: A Five-Cell Reliability Audit._ (under review)
+> Yi Xu. _Silent Failures of Adaptive Mechanisms in Data-Driven Nuclear Power Plant Transient Diagnosis: A Component-Level Reliability Audit Across Simulated and Measured Data._ (under review)
 
 **Contact:** Yi Xu — [Yi.Xu.Prof@outlook.com](mailto:Yi.Xu.Prof@outlook.com) · ORCID [0009-0002-3789-8136](https://orcid.org/0009-0002-3789-8136)
