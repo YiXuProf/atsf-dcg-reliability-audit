@@ -2,7 +2,7 @@
 
 Runs ``python -m atsf_dcg.eval_dump --synthetic --smoke`` into a temporary
 directory, asserts all dump files exist with the expected shapes, then runs
-``python scripts/make_fig_runlevel.py`` on the dump and asserts the 5 PNG + 5 SVG
+``python scripts/make_fig03_07_runlevel.py`` on the dump and asserts the 5 PNG + 5 SVG
 figure files and the stdout stats (per-class alpha band, S(0.9) rates,
 silhouette, confusion-matrix accuracy).
 
@@ -122,7 +122,7 @@ def main() -> None:
     print("[test] eval_dump outputs OK: shapes, dtypes, metric cross-check.")
 
     # ---- 2. figure script end-to-end ----------------------------------------
-    cmd = [sys.executable, str(ROOT / "scripts" / "make_fig_runlevel.py"),
+    cmd = [sys.executable, str(ROOT / "scripts" / "make_fig03_07_runlevel.py"),
            "--dump-dir", str(dump_dir), "--out-dir", str(fig_dir)]
     print(f"[test] running: {' '.join(cmd)}")
     proc = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
