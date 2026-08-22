@@ -403,7 +403,7 @@ output/
 ├── figures/        # same stems as paper/ (written by make_figXX.py)
 ├── tables/         # five-cell summary CSVs
 ├── analysis_n30/   # supplementary n=30 merge from `python main.py n30`
-├── experiments/    # per-cell results_table.csv, diagnostics/*.jsonl, …
+├── experiments/    # per-cell results_table.csv …
 ├── intermediate/   # eval_dump (α / gates / features; large)
 └── logs/
 ```
